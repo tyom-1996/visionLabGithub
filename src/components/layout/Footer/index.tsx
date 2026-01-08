@@ -132,7 +132,7 @@ const Footer = ({ additionalData, navigation, siteUrl }: Props) => {
                 .map((linkData, index) => (
                   <li key={linkData.code + index} className="gsapitem">
                     <Button
-                      href={"/" + linkData.code}
+                      href={'/' + linkData.code}
                       variant="transparent-primary-text"
                     >
                       {linkData.name}
@@ -147,7 +147,7 @@ const Footer = ({ additionalData, navigation, siteUrl }: Props) => {
                 {rightNavList.map((linkData, index) => (
                   <li key={linkData.code + index}>
                     <Button
-                      href={"/" + linkData.code}
+                      href={'/' + linkData.code}
                       className="scramb"
                       variant="transparent-primary-text"
                     >
@@ -194,8 +194,8 @@ const Footer = ({ additionalData, navigation, siteUrl }: Props) => {
           {(additionalData?.email || additionalData?.phone_number) && (
             <ContactsBlock
               className="gsapitem"
-              telephone={additionalData?.phone_number || ""}
-              email={additionalData?.email || ""}
+              telephone={additionalData?.phone_number || ''}
+              email={additionalData?.email || ''}
             />
           )}
           <div className={styles.footerCopyright}>

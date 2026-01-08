@@ -159,4 +159,3 @@ export const newEvents: EventItem[] = [
 ];
 
 export const allEvents = [...webinars, ...confs];
-

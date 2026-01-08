@@ -43,11 +43,9 @@ const WebinarProgram = ({ items, expandedId, classes }: Props) => {
 
   return (
     <section className={classes.section}>
-        <div className={classes.heading}>Программа вебинара</div>
-       
-
+      <div className={classes.heading}>Программа вебинара</div>
       <div className={classes.grid}>
-      <div className={classes.times}>
+        <div className={classes.times}>
           {items.map((item) => (
             <div key={item.id} className={classes.timeRow}>
               <span className={classes.order}>{item.order}</span>
@@ -69,7 +67,7 @@ const WebinarProgram = ({ items, expandedId, classes }: Props) => {
                     aria-expanded={isOpen}
                     onClick={() => toggle(item.id)}
                   >
-                {hasContent ? (isOpen ? <MinusIcon /> : <PlusIcon />) : (isOpen ? <MinusIcon /> : <PlusIcon />)}
+                    {hasContent ? (isOpen ? <MinusIcon /> : <PlusIcon />) : (isOpen ? <MinusIcon /> : <PlusIcon />)}
                   </button>
                 </div>
                 {isOpen && hasContent && (
@@ -89,4 +87,3 @@ const WebinarProgram = ({ items, expandedId, classes }: Props) => {
 };
 
 export default WebinarProgram;
-

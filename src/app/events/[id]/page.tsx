@@ -40,35 +40,35 @@ const EventDetailsPage = async ({ params }: Params) => {
       name: 'КИРИЛЛОВ Иван Дамидович',
       role: 'CEO «РусГидро»',
       company: '',
-      image: '/content/images/speaker_img1.png'
+      image: '/content/images/speaker_img1.png',
     },
     {
       id: 2,
       name: 'МИХАЙЛОВ Александр Гиднев',
       role: 'Менеджер по продажам ООО «Стальные линии»',
       company: '',
-      image: '/content/images/speaker_img2.png'
+      image: '/content/images/speaker_img2.png',
     },
     {
       id: 3,
       name: 'КИРИЛЛОВ Иван Дамидович',
       role: 'CEO «РусГидро»',
       company: '',
-      image: '/content/images/speaker_img1.png'
+      image: '/content/images/speaker_img1.png',
     },
     {
       id: 4,
       name: 'МИХАЙЛОВ Александр Гиднев',
       role: 'Менеджер по продажам ООО «Стальные линии»',
       company: '',
-      image: '/content/images/speaker_img2.png'
+      image: '/content/images/speaker_img2.png',
     }
   ];
   const speakers = [
     ...baseSpeakers,
     ...baseSpeakers.map((speaker, idx) => ({
       ...speaker,
-      id: `dup-${idx}`
+      id: `dup-${idx}`,
     }))
   ];
 
@@ -81,7 +81,7 @@ const EventDetailsPage = async ({ params }: Params) => {
       items: [
         'Приветствие участников',
         'Краткий обзор тем встречи'
-      ]
+      ],
     },
     {
       id: 2,
@@ -95,7 +95,7 @@ const EventDetailsPage = async ({ params }: Params) => {
         'Ответы на вопросы и обсуждение',
         'Итоги и ключевые выводы',
         'Рекомендации и дальнейшие шаги для участников'
-      ]
+      ],
     },
     {
       id: 3,
@@ -105,7 +105,7 @@ const EventDetailsPage = async ({ params }: Params) => {
       items: [
         'Сценарии внедрения ИИ в офлайн и онлайн-магазинах',
         'Антифрод и персонализация на витрине'
-      ]
+      ],
     },
     {
       id: 4,
@@ -115,7 +115,7 @@ const EventDetailsPage = async ({ params }: Params) => {
       items: [
         'Ключевые тренды по компьютерному зрению',
         'Что меняется в требованиях к ML-моделям'
-      ]
+      ],
     },
     {
       id: 5,
@@ -125,7 +125,7 @@ const EventDetailsPage = async ({ params }: Params) => {
       items: [
         'Резюме и выводы',
         'Ответы на вопросы участников'
-      ]
+      ],
     }
   ];
 
@@ -133,22 +133,22 @@ const EventDetailsPage = async ({ params }: Params) => {
     {
       id: 1,
       title: 'Руководителям и владельцам бизнеса',
-      description: 'Узнайте как повысить рентабельность уже купленных GPU'
+      description: 'Узнайте как повысить рентабельность уже купленных GPU',
     },
     {
       id: 2,
       title: 'ИТ-руководителям и менеджерам',
-      description: 'Узнайте как точнее планировать SLA и сроки выполнения задач'
+      description: 'Узнайте как точнее планировать SLA и сроки выполнения задач',
     },
     {
       id: 3,
       title: 'Руководителям и владельцам бизнеса',
-      description: 'Узнайте как повысить рентабельность уже купленных GPU'
+      description: 'Узнайте как повысить рентабельность уже купленных GPU',
     },
     {
       id: 4,
       title: 'ИТ-руководителям и менеджерам',
-      description: 'Узнайте как точнее планировать SLA и сроки выполнения задач'
+      description: 'Узнайте как точнее планировать SLA и сроки выполнения задач',
     }
   ];
 
@@ -195,7 +195,7 @@ const EventDetailsPage = async ({ params }: Params) => {
       return {
         ...base,
         id: base.id * 1000 + idx, // keep ids unique for React keys
-        img: otherEventsImages[idx % otherEventsImages.length]
+        img: otherEventsImages[idx % otherEventsImages.length],
       };
     }
   );
@@ -204,7 +204,7 @@ const EventDetailsPage = async ({ params }: Params) => {
     // Ensure no inherited gap is applied to Questions block on this page
     '--gap-size': '0px',
     marginTop: 0,
-    paddingTop: 0
+    paddingTop: 0,
   };
 
   // const headerImageData = {
@@ -321,7 +321,7 @@ const EventDetailsPage = async ({ params }: Params) => {
           itemHeader: styles.programItemHeader,
           title: styles.programTitle,
           toggle: styles.programToggle,
-          bullets: styles.programBullets
+          bullets: styles.programBullets,
         }}
       />
 

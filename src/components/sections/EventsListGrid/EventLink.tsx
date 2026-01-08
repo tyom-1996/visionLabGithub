@@ -1,7 +1,6 @@
-import { Button } from "@/components/shared/Button";
-import Image from "next/image";
+import { Button } from '@/components/shared/Button';
+import Image from 'next/image';
 import styles from './styles.module.scss';
-import classNames from "classnames";
 
 type WebinarItem = {
   id: number;
@@ -12,8 +11,8 @@ type WebinarItem = {
 };
 
 type Props = {
-    event: WebinarItem;
-}
+  event: WebinarItem;
+};
 
 const EventLink = ({ event }: Props) => {
   return (
@@ -29,14 +28,14 @@ const EventLink = ({ event }: Props) => {
           className={styles.image}
         />
         <div className={styles.imageOverlay}>
-          <p className={styles.date}>{event.date}/{event.time}</p>
-          <h3 className={styles.linkTitle}>
-            {event.title}
-          </h3>
+          <p className={styles.date}>
+            {event.date}/{event.time}
+          </p>
+          <h3 className={styles.linkTitle}>{event.title}</h3>
         </div>
       </Button>
     </div>
   );
-}
+};
 
 export default EventLink;

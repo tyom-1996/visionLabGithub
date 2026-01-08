@@ -1,6 +1,5 @@
 'use client';
 import styles from './styles.module.scss';
-import { Button } from '@/components/shared/Button';
 import ChevronIcon from './ChevronIcon';
 import classNames from 'classnames';
 import { useScrollUp } from '@/hooks/useScrollUp';
@@ -14,10 +13,10 @@ export const ScrollUpBtn = () => {
   const handleScrollTop = () => {
     if (lenis) {
       lenis.scrollTo(0, { duration: 1.2 });
-      console.log("lenis");
+      console.log('lenis');
     } else {
       window.scrollTo({ top: 0, behavior: 'smooth' });
-      console.log("native"); 
+      console.log('native');
     }
   };
 
@@ -25,7 +24,11 @@ export const ScrollUpBtn = () => {
     <div
       className={classNames(styles.container, { [styles.visible]: visible })}
     >
-      <button className={classNames(styles.button, "button-icon-to-right")} onClick={handleScrollTop} aria-label="Scroll to top">
+      <button
+        className={classNames(styles.button, 'button-icon-to-right')}
+        onClick={handleScrollTop}
+        aria-label="Scroll to top"
+      >
         <div className={styles.svgWrapper}>
           <ChevronIcon />
         </div>

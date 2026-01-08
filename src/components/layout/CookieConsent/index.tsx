@@ -30,15 +30,15 @@ export const CookieConsent = () => {
     );
 
     switch (choice) {
-      case 'all':
-        console.log('Cookies accepted: all');
-        break;
-      case 'essential':
-        console.log('Cookies accepted: essential');
-        break;
-      case 'decline':
-        console.log('Cookies declined');
-        break;
+    case 'all':
+      console.log('Cookies accepted: all');
+      break;
+    case 'essential':
+      console.log('Cookies accepted: essential');
+      break;
+    case 'decline':
+      console.log('Cookies declined');
+      break;
     }
 
     setIsOpen(false);
