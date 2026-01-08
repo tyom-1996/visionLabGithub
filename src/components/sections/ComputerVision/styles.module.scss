@@ -13,7 +13,10 @@
 }
 
 .banner {
-    background: linear-gradient(0deg, rgba(156, 118, 166, 0.20) 0%, rgba(156, 118, 166, 0.20) 100%), url('') lightgray 50% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(156, 118, 166, 0.20) 0%, rgba(156, 118, 166, 0.20) 100%), lightgray;
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 55vh;
     position: relative;
     max-height: 495px;
