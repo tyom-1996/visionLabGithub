@@ -71,7 +71,7 @@ export const webinars: EventItem[] = [
     title: 'Индивидуальный вебинар от Ксении Бордо',
     img: '/content/images/webinars-card-4.jpg',
     description: 'Экспертный взгляд на будущее визуальной идентификации и тренды в 2025 году.',
-  },
+  }
 ];
 
 export const confs: EventItem[] = [
@@ -138,7 +138,7 @@ export const confs: EventItem[] = [
     title: 'Вебинар: как применять ИИ в 2025 году',
     img: '/content/images/confs-card-4.jpg',
     description: 'Практические сценарии внедрения ИИ в крупных компаниях.',
-  },
+  }
 ];
 
 export const newEvents: EventItem[] = [
@@ -155,7 +155,7 @@ export const newEvents: EventItem[] = [
     time: '15:00',
     title: 'Конференция: ChaLearn Face Anti-spoofing Attack Detection Challenge',
     img: '/content/images/confs-card-1.jpg',
-  },
+  }
 ];
 
 export const allEvents = [...webinars, ...confs];
