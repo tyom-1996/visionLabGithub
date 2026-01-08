@@ -1,7 +1,7 @@
 @use 'mixins.scss' as *;
 @use 'variables.scss' as *;
-@import './containers';
-@import './news-item.scss';
+@use './containers' as *;
+@use './news-item.scss' as *;
 
 html {
   font-size: 10px;

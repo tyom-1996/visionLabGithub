@@ -1,4 +1,4 @@
-@import "./mixins";
+@use './mixins' as *;
 
 .news-item__intro {
     font-family: var(--font-secondary);
