@@ -1,0 +1,174 @@
+@use '@/styles/mixins.scss' as *;
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+
+    @include sm {
+        gap: 24px;
+    }
+}
+
+.headerWithTabs {
+    display: flex;
+
+    &.withLabel {
+        .titleAndActions {
+            width: 66.66%;
+            padding-left: 24px;
+        }
+    }
+
+    &:not(.withLabel) {
+        .titleAndActions {
+            width: 100%;
+        }
+    }
+
+    @include lg {
+        flex-direction: column;
+        gap: 7px;
+        padding: 0 var(--section-padding-size);
+
+        &.withLabel {
+            .titleAndActions {
+                width: 100%;
+                padding-left: 0;
+            }
+        }
+    }
+
+    @include sm {
+        gap: 16px;
+    }
+}
+.headerLabelWrapper {
+    width: 33.33%;
+    display: flex;
+    align-items: flex-end;
+
+    p {
+        font-family: var(--font-secondary);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 124%; /* 19.84px */
+        letter-spacing: -0.32px;
+        color: var(--color-text-secondary);
+    }
+
+    @include min-lg {
+        padding-left: 24px;
+    }
+
+    @include lg {
+        display: none;
+    }
+}
+.headerTabsControls {
+    width: 66.66%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 24px;
+
+    @include lg {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.headerTabsListWrapper {
+    display: flex;
+    gap: 24px;
+}
+.headerTabBtn {
+    padding: 17px 0;
+    font-size: 20px;
+    color: var(--color-text-secondary);
+    border-bottom: 2px solid transparent;
+    transition: all var(--transition-duration);
+
+    &.selectedTabBtn {
+        color: var(--color-black);
+        border-bottom: 2px solid var(--color-primary);
+    }
+}
+
+.headerSliderBtns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.hideBtns {
+        overflow: hidden;
+        opacity: 0;
+        height: 0;
+        width: 0;
+    }
+}
+.arrowLeft,
+.arrowRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    width: 56px;
+    height: 56px;
+
+    svg {
+        width: 10px;
+        height: 14px;
+    }
+}
+.arrowLeft {
+    transform: rotate(180deg);
+}
+
+.cardsSliderWrapper {
+    position: relative;
+    overflow: hidden;
+
+    @include lg {
+        padding: 0 var(--section-padding-size);
+    }
+
+    @include sm {
+        padding: 0;
+    }
+}
+
+.cardsSwiper {
+    display: grid;
+    overflow: visible;
+}
+
+.bottomSliderBts {
+    display: flex;
+    justify-content: center;
+
+    svg {
+        width: 24px;
+        height: 24px;
+        margin: 0 -3px;
+        color: var(--color-grey-700);
+        transition: all var(--transition-duration);
+
+        &.active {
+            color: var(--color-black);
+        }
+    }
+
+    &.padding {
+        padding-bottom: 16px;
+    }
+
+    &.whiteBg {
+        margin-top: -39px;
+        background: var(--color-white);
+
+        @include sm {
+            margin-top: -24px;
+        }
+    }
+}

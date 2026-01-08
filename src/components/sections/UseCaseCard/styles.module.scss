@@ -1,0 +1,97 @@
+@use '@/styles/mixins.scss' as *;
+
+.useCaseWrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 520px;
+    width: 100%;
+    padding: 24px;
+    background: var(--color-white);
+    cursor: pointer;
+    overflow: hidden;
+
+    @include sm {
+        padding: 24px var(--section-padding-size);
+    }
+
+    @include nonTouchDevice {
+        &:hover {
+            .useCaseImageWrapper svg {
+                color: var(--color-primary);
+            }
+        }
+    }
+}
+
+.useCaseTitle {
+    font-size: 24px;
+    font-weight: 492;
+    line-height: 110%; /* 26.4px */
+    height: 53px;
+
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        height: 80px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    @include sm {
+        font-size: 20px;
+    }
+}
+
+.useCaseImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.useCaseImageWrapper {
+    max-width: 200px;
+    max-height: 200px;
+    overflow: hidden;
+
+    svg {
+        transition: var(--transition-duration-x2);
+    }
+}
+
+.useCaseDescription {
+    min-height: 66px;
+    font-family: var(--font-secondary);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 124%;
+    letter-spacing: -0.36px;
+    transition: var(--transition-duration);
+    height: 90px;
+    display: flex;
+    align-items: flex-start;
+
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        height: 134px;
+    }
+
+    @include sm {
+        height: auto;
+        font-size: 16px;
+        letter-spacing: -0.32px;
+    }
+
+    p {
+        @media (min-width: 768px) {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        @media (min-width: 768px) {
+            -webkit-line-clamp: 7;
+        }
+    }
+}

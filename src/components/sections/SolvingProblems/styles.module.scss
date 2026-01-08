@@ -1,0 +1,78 @@
+@use '@/styles/mixins.scss' as *;
+
+.solvingList {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px 0;
+  padding-left: 1px;
+
+  @include min-lg {
+    &::before {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      top: 0;
+      z-index: 1;
+      background-color: var(--color-border-general);
+    }
+
+    &::before {
+      left: calc(50% - 1px);
+    }
+  }
+
+  @include lg {
+    gap: 1px;
+    width: 100%;
+    padding: 0 var(--section-padding-size);
+  }
+
+  @include sm {
+    padding: 0;
+  }
+}
+
+.solvingWrapper {
+  width: 50%;
+  min-height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: white;
+  padding: 24px;
+
+  @include lg {
+    width: calc((100% - 1px) / 2);
+  }
+
+  @include sm {
+    min-height: 162px;
+    width: 100%;
+    padding: 24px var(--section-padding-size);
+  }
+}
+
+.solvingDescription {
+  font-family: var(--font-secondary);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 126%; /* 27.72px */
+  letter-spacing: -0.66px;
+
+  @include sm {
+    font-size: 18px;
+    line-height: 124%; /* 22.32px */
+    letter-spacing: -0.36px;
+  }
+}
+
+.solvingName {
+  font-family: var(--font-secondary);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 124%; /* 22.32px */
+  letter-spacing: -0.36px;
+  color: var(--color-text-secondary);
+}

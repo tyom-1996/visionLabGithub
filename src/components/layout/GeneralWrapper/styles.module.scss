@@ -1,0 +1,44 @@
+@use '@/styles/mixins.scss' as *;
+@use 'sass:map';
+
+.wrapper {
+    max-width: var(--max-width-page);
+    margin: 0 auto;
+    position: relative;
+    // добавлен паддинг из-за position: fixed у хедера
+    padding-top: var(--header-height);
+
+    // Если мало контента то не видно фоновых полос
+    @include min-lg {
+        min-height: 100vh;
+    }
+}
+
+.sideBorders {
+    @include min-lg {
+        border-left: 1px solid var(--color-border-general);
+        border-right: 1px solid var(--color-border-general);
+    }
+}
+.centerBorders {
+    @include min-lg {
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            top: 0;
+            z-index: -1;
+            background-color: var(--color-border-general);
+        }
+
+        &::before {
+            left: 33.33%;
+        }
+
+        &::after {
+            right: 33.33%;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@use '@/styles/mixins.scss' as *;
+
+.mainPageWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-size);
+
+    /* Задаём переменную, чтобы дочерние элменты могли этим пользоваться */
+    --gap-size: 192px;
+
+    @include lg {
+        --gap-size: 96px;
+    }
+}
+
+.sectionTitle {
+    font-size: 34px;
+    font-weight: 584;
+    line-height: 112%;
+
+    @include min-lg {
+        padding-left: 24px;
+    }
+
+    @include sm {
+        font-size: 24px;
+    }
+}

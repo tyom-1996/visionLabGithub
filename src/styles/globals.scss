@@ -1,0 +1,69 @@
+@use 'mixins.scss' as *;
+@use 'variables.scss' as *;
+@import './containers';
+@import './news-item.scss';
+
+html {
+  font-size: 10px;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+  &:not(.is-loaded) {
+    scrollbar-gutter: stable;
+  }
+}
+
+html,
+body {
+  // max-width: 100vw;
+  overflow-x: clip;
+}
+
+body {
+  color: var(--color-black);
+  background: var(--background);
+  font-family: var(--font-primary);
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0 var(--body-padding-size);
+
+  &.no-scroll {
+    overflow: hidden;
+    padding-right: calc(var(--body-padding-size) + var(--scrollbar-width, 0));
+
+    header {
+      padding-right: calc(var(--body-padding-size) + var(--scrollbar-width, 0));
+    }
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+  word-wrap: break-word;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}

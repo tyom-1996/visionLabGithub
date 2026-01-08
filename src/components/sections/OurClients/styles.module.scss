@@ -1,0 +1,91 @@
+@use '@/styles/mixins.scss' as *;
+@use 'sass:map';
+
+.prevSwiperBtn,
+.nextSwiperBtn {
+    cursor: pointer;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 98px;
+    padding: 0 24px 24px;
+    width: 100%;
+
+    img {
+        width: 72px;
+        height: 72px;
+        transition: var(--transition-duration);
+    }
+
+    p {
+        font-size: 24px;
+        font-weight: 492;
+        line-height: 110%; /* 26.4px */
+    }
+
+    @include lg {
+        gap: 98px;
+        padding: 0 24px;
+    }
+
+    @include sm {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 0;
+        padding: 0;
+
+        p {
+            font-size: 20px;
+        }
+    }
+}
+
+.cardImageWrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.cardBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+
+    @include min-lg {
+        & > *:first-child::after {
+            content: '';
+            display: block;
+            height: 1px;
+            background-color: var(--color-border-general);
+            margin: 48px 0;
+        }
+    }
+
+    @include lg {
+        & > *:nth-child(-n+2)::after {
+            content: '';
+            display: block;
+            height: 1px;
+            background-color: var(--color-border-general);
+            margin: 48px 0;
+        }
+    }
+
+    @include sm {
+        & > *::after {
+            content: '';
+            display: block;
+            height: 1px;
+            background-color: var(--color-border-general);
+            margin: 24px 0;
+        }
+
+        & > *:last-child {
+            margin-bottom: -24px;
+        }
+    }
+}

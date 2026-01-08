@@ -1,0 +1,15 @@
+@use '@/styles/mixins.scss' as *;
+
+.storiesPageWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-size);
+    margin-top: var(--gap-size);
+
+    /* Задаём переменную, чтобы дочерние элменты могли этим пользоваться */
+    --gap-size: 96px;
+
+    @include sm {
+        --gap-size: 64px;
+    }
+}

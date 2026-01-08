@@ -1,0 +1,172 @@
+@use '@/styles/mixins.scss' as *;
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+
+    @include sm {
+        gap: 24px;
+    }
+}
+
+.sectionTitleContainer {
+    display: flex;
+
+    &.withLabel {
+        .titleAndActions {
+            width: 66.66%;
+            padding-left: 24px;
+        }
+    }
+
+    &:not(.withLabel) {
+        .titleAndActions {
+            width: 100%;
+        }
+    }
+
+    @include lg {
+        flex-direction: column;
+        gap: 7px;
+
+        &.withLabel {
+            .titleAndActions {
+                width: 100%;
+                padding-left: 0;
+            }
+        }
+    }
+
+    @include sm {
+        gap: 16px;
+    }
+}
+.sectionTitleLabelWrapper {
+    width: 33.33%;
+    height: 39px;
+    display: flex;
+    align-items: flex-start;
+
+    p {
+        font-family: var(--font-secondary);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 124%; /* 19.84px */
+        letter-spacing: -0.32px;
+        color: var(--color-text-secondary);
+    }
+
+    @include min-lg {
+        padding-left: 24px;
+        align-self: center;
+    }
+
+    @include lg {
+        width: 100%;
+        height: auto;
+    }
+}
+.titleAndActions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sliderBtns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+
+    &.hideBtns {
+        overflow: hidden;
+        opacity: 0;
+        height: 0;
+        width: 0;
+    }
+}
+.arrowLeft,
+.arrowRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    width: 56px;
+    height: 56px;
+    background: var(--color-white);
+
+    svg {
+        width: 10px;
+        height: 14px;
+    }
+}
+.arrowLeft {
+    transform: rotate(180deg);
+}
+
+.cardsSliderWrapper {
+    position: relative;
+
+    :global(.swiper) {
+        display: block;
+    }
+}
+
+.bottomSliderBtns {
+    display: flex;
+    justify-content: center;
+
+    svg {
+        width: 24px;
+        height: 24px;
+        margin: 0 -3px;
+        color: var(--color-grey-700);
+        transition: all var(--transition-duration);
+
+        &.active {
+            color: var(--color-black);
+        }
+    }
+
+    &.padding {
+        padding-bottom: 16px;
+    }
+
+    &.whiteBg {
+        margin-top: -39px;
+        background: var(--color-white);
+
+        @include sm {
+            margin-top: -24px;
+        }
+    }
+}
+
+.variantStoriesPreview {
+    .sectionTitleLabelWrapper {
+        width: 43px;
+        align-items: flex-start;
+    }
+
+    .titleAndActions {
+        flex: 1;
+        padding-left: 0 !important;
+    }
+}
+
+.variantScenarios {
+    .sectionTitleLabelWrapper {
+        width: 20px;
+        align-items: flex-start;
+
+        @include min-lg {
+            padding-left: 0;
+        }
+    }
+
+    .titleAndActions {
+        flex: 1;
+        padding-left: 0 !important;
+    }
+}

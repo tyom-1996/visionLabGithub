@@ -1,0 +1,208 @@
+@use '@/styles/mixins.scss' as *;
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    background: var(--color-white);
+
+    @include sm {
+        padding: 24px 16px;
+    }
+
+    &.visible {
+        @include min-lg {
+            .card {
+                transition: opacity 550ms cubic-bezier(0.85, 0.09, 0.15, 0.91),  transform 550ms cubic-bezier(0.85, 0.09, 0.15, 0.91);
+                transform: translate(0, 0);
+                opacity: 1;
+
+                &:nth-child(2) {
+                    transition-delay: 100ms;
+                }
+
+                &:nth-child(3) {
+                    transition-delay: 200ms;
+                }
+            }
+        }
+    }
+}
+
+.prevSwiperBtn,
+.nextSwiperBtn {
+    cursor: pointer;
+}
+
+.card {
+    width: 100%;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px;
+    position: relative;
+    cursor: pointer;
+
+    .cardTitle,
+    .cardDescription,
+    .cardSvgWrapper {
+        z-index: 1;
+        transition: var(--transition-duration);
+    }
+
+    @include min-lg {
+        opacity: 0;
+        transform: translate(0, 20px);
+        transition: opacity 0s linear 0s, transform 0s linear 0s;
+    }
+
+    @include lg {
+        justify-content: space-between;
+
+        .cardBgImage {
+            opacity: 1;
+        }
+
+        .cardTitle,
+        .cardDescription {
+            color: var(--color-white);
+        }
+
+        .cardSvgWrapper {
+            display: none;
+        }
+    }
+
+    @include touchDevice {
+        justify-content: space-between;
+        .cardBgImage {
+            opacity: 1;
+        }
+
+        .cardTitle,
+        .cardDescription {
+            color: var(--color-white);
+        }
+
+        .cardSvgWrapper {
+            display: none;
+        }
+    }
+}
+.cardBgImage {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: var(--transition-duration-x1-5);
+
+    video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+.hoveredCard {
+    .cardBgImage {
+        opacity: 1;
+    }
+
+    .cardTitle,
+    .cardDescription {
+        color: var(--color-white);
+    }
+
+    .cardSvgWrapper {
+        opacity: 0;
+    }
+}
+.cardSvgWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+
+    img {
+        width: 200px;
+        height: 200px;
+        color: var(--color-black);
+    }
+}
+.cardTitle {
+    font-size: 24px;
+    font-weight: 492;
+    line-height: 110%; /* 28.6px */
+    height: 53px;
+
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        height: 80px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+.cardDescription {
+    font-family: var(--font-secondary);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 124%; /* 19.84px */
+    letter-spacing: -0.36px;
+    display: flex;
+    align-items: flex-start;
+
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        height: 134px;
+    }
+
+    @media (min-width: 1280px) {
+        height: 90px;
+    }
+
+    @include sm {
+        height: auto;
+        font-size: 16px;
+        letter-spacing: -0.32px;
+    }
+
+    p {
+        @media (min-width: 1024px) {
+            display: -webkit-box;
+            -webkit-line-clamp: 7;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        @media (min-width: 1280px) {
+            -webkit-line-clamp: 6;
+        }
+    }
+}
+
+.lastCardWithLottie {
+    @media (max-width: 1024px) {
+        .cardTitle,
+        .cardDescription {
+            color: var(--color-black);
+        }
+
+        .cardSvgWrapper {
+            display: block;
+
+            img {
+                display: block;
+                margin: auto;
+            }
+        }
+    }
+}

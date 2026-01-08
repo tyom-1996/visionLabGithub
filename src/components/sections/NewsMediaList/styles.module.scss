@@ -1,0 +1,59 @@
+@use '@/styles/mixins.scss' as *;
+
+.wrapper {
+    @include lg {
+        padding: var(--section-padding);
+        gap: 64px 1px;
+    }
+
+    @include sm {
+        padding: 0;
+        gap: 24px;
+    }
+}
+
+.newsMediaListWrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px 0;
+
+    @include min-lg {
+        &::before,
+        &::after {
+            z-index: 0 !important;
+        }
+    }
+}
+
+.newsMediaItemWrapper {
+    display: flex;
+    width: 33.33%;
+
+    @include lg {
+        width: calc((100% - 1px) / 2);
+    }
+
+    @include sm {
+        width: 100%;
+    }
+}
+
+.showMoreBtnWrapper button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    background: var(--color-white);
+    margin-top: 1px;
+
+    svg {
+        width: 25px;
+        height: 24px;
+    }
+
+    @include sm {
+        padding: 26px
+    }
+}

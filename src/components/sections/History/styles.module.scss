@@ -1,0 +1,145 @@
+@use '@/styles/mixins.scss' as *;
+
+.history {
+  :global {
+    .swiper {
+      width: 194px;
+      overflow: visible;
+      margin: 0;
+    }
+    .swiper-slide {
+      transition: none;
+      display: flex;
+      align-items: flex-end;
+      cursor: pointer;
+    }
+    .swiper-slide-prev {
+      width: 194px !important;
+    }
+    .swiper-slide-active {
+      width: 194px !important;
+
+      & ~ .swiper-slide {
+        width: 154px !important;
+      }
+    }
+
+    .swiper-slide {
+      @include min-lg {
+        justify-content: flex-end;
+
+        div {
+          position: relative;
+          width: var(--prev-year-width);
+          transition: width 0.4s;
+          will-change: width;
+        }
+
+        &:first-child.swiper-slide-active ~ .swiper-slide,
+        &.swiper-slide-prev ~ .swiper-slide {
+          div {
+            width: 154px;
+          }
+        }
+
+        &.swiper-slide-active {
+          div {
+            width: 194px !important;
+          }
+        }
+      }
+    }
+
+    @include min-lg {
+      .desktop-disabled {
+        color: var(--color-grey-900);
+        pointer-events: none;
+      }
+    }
+  }
+}
+
+.cardYear {
+  font-family: var(--font-secondary);
+  font-size: 22px;
+  line-height: 126%; /* 27.72px */
+  letter-spacing: -0.66px;
+  padding: 0 8px 29px;
+  position: relative;
+  color: var(--color-text-secondary);
+  user-select: none;
+
+  :global(.swiper-slide-active) & {
+    font-size: 48px;
+    line-height: 100%; /* 48px */
+    letter-spacing: -3.84px;
+    color: var(--color-black);
+  }
+
+  :global(.swiper-slide-prev) & {
+    left: 24px;
+  }
+}
+
+.yearsSlider {
+  position: relative;
+  overflow: hidden;
+
+  @include min-lg {
+    padding-left: 33.33%;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: var(--color-grey-900);
+    left: 0;
+    bottom: 12px;
+  }
+}
+
+.marker {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: var(--color-grey-600);
+  width: 24px;
+  height: 24px;
+
+  :global(.swiper-slide-active) & {
+    color: var(--color-blue-500);
+  }
+
+  :global(.swiper-slide-prev) & {
+    left: 24px;
+  }
+}
+
+.prevHistorySwiper,
+.nextHistorySwiper {
+    cursor: pointer;
+}
+
+.yearDescription {
+  margin-top: 24px;
+  background: var(--color-white);
+  padding: 24px;
+  font-family: var(--font-secondary);
+  font-size: 22px;
+  line-height: 126%; /* 27.72px */
+  letter-spacing: -0.66px;
+
+  @include min-lg {
+    margin-left: calc(33.33% + 1px);
+  }
+}
+
+.cardDescription {
+  display: none;
+}
+
+.cardDescriptionActive {
+  display: block;
+}

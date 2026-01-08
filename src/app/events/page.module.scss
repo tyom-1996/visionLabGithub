@@ -1,0 +1,139 @@
+@use '@/styles/mixins.scss' as *;
+
+.eventsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-size);
+  margin-top: 96px;
+
+  /* Задаём переменную, чтобы дочерние элменты могли этим пользоваться */
+  --gap-size: 192px;
+
+  @include sm {
+    --gap-size: 96px;
+
+    margin-top: 64px;
+  }
+}
+
+.awardsSectionWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+
+  @include sm {
+    gap: 96px;
+  }
+}
+
+.geographySectionWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+
+  @include lg {
+    gap: 64px;
+  }
+
+  @include sm {
+    gap: 24px;
+  }
+}
+
+.aboutList {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px 0;
+  padding-left: 1px;
+
+  @include min-lg {
+    &::before {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      top: 0;
+      z-index: 1;
+      background-color: var(--color-border-general);
+    }
+
+    &::before {
+      left: calc(50% - 1px);
+    }
+  }
+
+  @include lg {
+    gap: 1px;
+    width: 100%;
+    padding: 0 var(--section-padding-size);
+  }
+
+  @include sm {
+    padding: 0;
+  }
+}
+
+.aboutCard {
+  width: 50%;
+  min-height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: white;
+  padding: 24px;
+
+  @include nonTouchDevice {
+    &:hover {
+      img {
+        filter: grayscale(0);
+      }
+    }
+  }
+
+  @include lg {
+    width: calc((100% - 1px) / 2);
+  }
+
+  @include sm {
+    min-height: 0;
+    width: 100%;
+    padding: 0 var(--section-padding-size) 24px;
+    gap: 48px 0;
+  }
+}
+
+.aboutImage {
+  margin: -24px;
+
+  @include sm {
+    margin: 0;
+  }
+
+  img {
+    display: block;
+    width: 72px;
+    height: 72px;
+    filter: grayscale(100%);
+    transition: all var(--transition-duration);
+
+    @include sm {
+      width: 48px;
+      height: 48px;
+    }
+  }
+}
+
+.aboutDescription {
+  font-family: var(--font-secondary);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 126%; /* 27.72px */
+  letter-spacing: -0.66px;
+
+  @include sm {
+    font-size: 18px;
+    line-height: 124%; /* 22.32px */
+    letter-spacing: -0.36px;
+  }
+}

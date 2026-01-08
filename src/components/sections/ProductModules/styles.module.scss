@@ -1,0 +1,48 @@
+@use '@/styles/mixins.scss' as *;
+
+.modulesList {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+
+    @include lg {
+        width: 100%;
+    }
+
+    @include sm {
+        gap: 48px;
+    }
+}
+
+.moduleWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 24px;
+
+    @include lg {
+        padding: 0 var(--section-padding-size);
+    }
+}
+.moduleName {
+    font-size: 24px;
+    font-weight: 492;
+    line-height: 110%; /* 26.4px */
+
+    @include sm {
+        font-size: 20px;
+    }
+}
+.moduleDescription {
+    font-family: var(--font-secondary);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 124%; /* 22.32px */
+    letter-spacing: -0.36px;
+    color: var(--color-text-secondary);
+
+    @include sm {
+        font-size: 16px;
+        letter-spacing: -0.32px;
+    }
+}

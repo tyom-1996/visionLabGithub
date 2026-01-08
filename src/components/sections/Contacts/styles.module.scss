@@ -1,0 +1,91 @@
+@use '@/styles/mixins.scss' as *;
+
+.contactsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+}
+
+.contactsListWrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.contactsList {
+  width: 66.66%;
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+
+  @include lg {
+    width: 100%;
+    padding: var(--section-padding);
+  }
+
+  @include sm {
+    gap: 64px;
+  }
+}
+
+.contactItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 24px 0 24px;
+  border-top: 1px solid var(--color-border-general);
+
+  @include lg {
+    padding: 24px 0 0 0;
+  }
+
+  @include sm {
+    flex-direction: column;
+    justify-content: start;
+    gap: 16px;
+  }
+}
+.contactItemTitle {
+  width: 50%;
+  font-family: var(--font-secondary);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 124%; /* 22.32px */
+  letter-spacing: -0.32px;
+  color: var(--color-text-secondary);
+
+  @include sm {
+    width: 100%;
+  }
+}
+.contactItemDetails {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+
+  span {
+    font-family: var(--font-primary);
+    font-size: 20px;
+    font-weight: 492;
+    line-height: 110%; /* 26.4px */
+  }
+
+  @include sm {
+    width: 100%;
+    align-items: flex-start;
+
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+.contactItemBtn {
+  justify-content: flex-end;
+  gap: 0px;
+
+  svg {
+    width: 25px;
+    height: 24px;
+    transform: rotate(-90deg);
+  }
+}

@@ -1,0 +1,50 @@
+@use '@/styles/mixins.scss' as *;
+
+.wrapper {
+    overflow: hidden;
+    background-color: var(--color-white);
+}
+
+.prevSwiperBtn,
+.nextSwiperBtn {
+    cursor: pointer;
+}
+
+.newsListWrapper {
+    overflow: hidden;
+    padding: 24px;
+
+    @include lg {
+        padding: 24px var(--section-padding-size) 0;
+    }
+
+    @include sm {
+        padding: 24px 0 0;
+    }
+}
+
+.swiperTitleContainer {
+    @include sm {
+        padding: 0 var(--section-padding-size);
+    }
+}
+
+.allNewsBtnWrapper {
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        width: 100%;
+        border-top: 1px solid var(--color-border-general-on-white);
+
+        svg {
+            width: 25px;
+            height: 24px;
+        }
+
+        @include sm {
+            padding: 26px
+        }
+    }
+}

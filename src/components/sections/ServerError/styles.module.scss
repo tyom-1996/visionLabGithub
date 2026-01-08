@@ -1,0 +1,132 @@
+@use '@/styles/mixins.scss' as *;
+
+.wrapper {
+    padding: 192px 0 192px 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    position: relative;
+
+    @include lg {
+        padding: 192px 24px 192px 24px;
+        grid-template-columns: 1fr;
+    }
+
+    @include sm {
+        padding: 96px 16px 128px 16px;
+    }
+}
+
+.bgCode {
+    position: absolute;
+    top: -102px;
+    right: 0;
+    transform: rotate(180deg);
+    writing-mode: vertical-lr;
+    color: var(--color-white);
+    
+    font-family: var(--font-primary);
+    font-size: 326px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    z-index: -1;
+    user-select: none;
+}
+
+.text {
+    grid-column: 1;
+    color: var(--color-grey-300);
+    font-family: var(--font-secondary);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 126%;
+    letter-spacing: -0.66px;
+    padding-left: 24px;
+    white-space: nowrap;
+
+    @include lg {
+        padding: 0;
+    }
+
+    @include sm {
+        font-size: 18px;
+        line-height: 124%;
+        letter-spacing: -0.36px;
+    }
+}
+
+.heading {
+    color: var(--color-black);
+    font-family: var(--font-primary);
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 584;
+    line-height: 112%;
+    letter-spacing: normal;
+    margin-bottom: 16px;
+
+    @include sm {
+        font-size: 24px;
+        line-height: 110%;
+    }
+}
+
+.actionBtn {
+    grid-column: 1;
+    margin-top: 48px;
+    margin-left: 24px;
+
+    @include lg {
+        margin-left: 0;
+    }
+
+    @include sm {
+        margin-top: 32px;
+    }
+
+    svg {
+        width: 10px;
+        height: 14px;
+    }
+}
+
+.contacts {
+    position: relative;
+    display: flex;
+    gap: 16px;
+    padding: 24px 0;
+    font-style: normal;
+
+    @include sm {
+        padding: 0;
+        padding-bottom: 16px;
+
+        &::after {
+            width: 100%;
+        }
+    }
+}
+.contactBtn {
+    span {
+        font-family: var(--font-primary);
+        font-style: normal;
+        font-size: 20px;
+        font-weight: 492;
+        line-height: 110%; /* 19.8px */
+        letter-spacing: normal;
+        word-break: break-all;
+    }
+
+    @include sm {
+        span {
+            font-size: 18px;
+            padding: 0;
+        }
+    }
+}
+.telephone {
+    padding-right: 16px;
+    border-right: 1px solid var(--color-border-general-on-white);
+}

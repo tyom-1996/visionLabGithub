@@ -1,0 +1,35 @@
+@forward 'mixins.breakpoints.scss';
+@use 'sass:color';
+
+/* Enable hover only on non-touch devices */
+@mixin nonTouchDevice {
+  @media (hover: hover) and (pointer: fine) {
+    @content;
+  }
+}
+
+/* Enable hover only on touch devices */
+@mixin touchDevice {
+  @media (hover: none) and (pointer: coarse) {
+    @content;
+  }
+}
+
+/* Dark browser color scheme */
+@mixin colorSchemeDark {
+  @media (prefers-color-scheme: dark) {
+    @content;
+  }
+}
+
+/* Prefers reduced motion */
+@mixin reducedMotion {
+  @media (prefers-reduced-motion) {
+    @content;
+  }
+}
+
+/* HexToRGB */
+@function HexToRGB($hex) {
+  @return color.channel($hex, 'red'), color.channel($hex, 'green'), color.channel($hex, 'blue');
+}

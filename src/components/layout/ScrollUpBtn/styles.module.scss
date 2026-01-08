@@ -1,0 +1,74 @@
+@use '@/styles/mixins.scss' as *;
+
+.container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3s ease, transform .3s ease;
+  transform: translateY(20px);
+  z-index: 999;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background-color: var(--color-white);
+    color: var(--color-text-primary);
+    transition: color 600ms cubic-bezier(0.85, 0.09, 0.15, 0.91), background-color 600ms cubic-bezier(0.85, 0.09, 0.15, 0.91);
+    clip-path: inset(0 0 0 0);
+
+    @include nonTouchDevice {
+      &:hover {
+        background-color: var(--color-primary);
+        color: var(--color-white)
+      }
+      &:hover .svgWrapper svg {
+        animation: svg-to-up 500ms cubic-bezier(0.85, 0.09, 0.15, 0.91) both;
+      }
+    }
+
+    .svgWrapper {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      flex-shrink: 0;
+      overflow: hidden;
+      position: relative;
+
+      svg {
+        display: block;
+        position: absolute;
+        inset: 0;
+      }
+    }
+  }
+}
+
+.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+@keyframes svg-to-up {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -100%);
+  }
+  51% {
+    transform: translate(0, 100%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}

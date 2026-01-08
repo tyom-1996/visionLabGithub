@@ -1,0 +1,11 @@
+@use '@/styles/mixins.scss' as *;
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+    @include sm {
+        gap: 24px;
+    }
+}

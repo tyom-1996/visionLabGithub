@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'TT Interphases Pro Trl';
+    src: url('TTInterphasesProTrl-Rg.eot');
+    src: url('TTInterphasesProTrl-Rg.eot?#iefix') format('embedded-opentype'),
+        url('TTInterphasesProTrl-Rg.woff2') format('woff2'),
+        url('TTInterphasesProTrl-Rg.woff') format('woff'),
+        url('TTInterphasesProTrl-Rg.ttf') format('truetype'),
+        url('TTInterphasesProTrl-Rg.svg#TTInterphasesProTrl-Rg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

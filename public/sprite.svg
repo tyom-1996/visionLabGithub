@@ -1,0 +1,219 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="arrow-split-x" width="32" height="32" viewBox="0 0 32 32" fill="none">
+    <rect x="20" y="13" width="3" height="3" transform="rotate(90 20 13)" fill="currentColor"/>
+    <rect x="11" y="19" width="3" height="3" transform="rotate(-90 11 19)" fill="currentColor"/>
+    <rect x="23" y="10" width="3" height="3" transform="rotate(90 23 10)" fill="currentColor"/>
+    <rect x="8" y="22" width="3" height="3" transform="rotate(-90 8 22)" fill="currentColor"/>
+    <rect x="20" y="16" width="3" height="3" transform="rotate(90 20 16)" fill="currentColor"/>
+    <rect x="11" y="16" width="3" height="3" transform="rotate(-90 11 16)" fill="currentColor"/>
+    <rect x="23" y="19" width="3" height="3" transform="rotate(90 23 19)" fill="currentColor"/>
+    <rect x="8" y="13" width="3" height="3" transform="rotate(-90 8 13)" fill="currentColor"/>
+  </symbol>
+  <symbol id="arrow-down-small" width="25" height="24" viewBox="0 0 25 24" fill="none">
+    <path fillRule="evenodd" clipRule="evenodd" d="M7.91666 12L10.9167 12L10.9167 15H13.9167V12L16.9167 12V9H13.9167L13.9167 12L10.9167 12L10.9167 9H7.91666V12Z" fill="currentColor"/>
+    <path fillRule="evenodd" clipRule="evenodd" d="M7.91666 12L10.9167 12L10.9167 15H13.9167V12L16.9167 12V9H13.9167L13.9167 12L10.9167 12L10.9167 9H7.91666V12Z" fill="currentColor" fillOpacity="0.2"/>
+    <path fillRule="evenodd" clipRule="evenodd" d="M7.91666 12L10.9167 12L10.9167 15H13.9167V12L16.9167 12V9H13.9167L13.9167 12L10.9167 12L10.9167 9H7.91666V12Z" fill="currentColor" fillOpacity="0.2"/>
+  </symbol>
+  <symbol id="arrow-right" viewBox="0 0 10 14" fill="none">
+    <path fillRule="evenodd" clipRule="evenodd" d="M0.164062 0H3.16406V2.8H0.164062V0ZM6.16406 5.6H3.16406V2.8H6.16406V5.6ZM6.16406 8.4V5.6L9.16406 5.6V8.4H6.16406ZM3.16406 11.2V8.4L6.16406 8.4V11.2H3.16406ZM3.16406 11.2V14H0.164062V11.2L3.16406 11.2Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="circle-with-point" viewBox="0 0 16 15" fill="none">
+    <rect x="6.91406" y="6" width="3" height="3" fill="currentColor"/>
+    <rect x="6.91406" width="3" height="3" fill="currentColor"/>
+    <rect x="9.91406" width="3" height="3" fill="currentColor"/>
+    <rect x="12.9141" y="3" width="3" height="3" fill="currentColor"/>
+    <rect x="12.9141" y="6" width="3" height="3" fill="currentColor"/>
+    <rect x="12.9141" y="9" width="3" height="3" fill="currentColor"/>
+    <rect x="9.91406" y="12" width="3" height="3" fill="currentColor"/>
+    <rect x="6.91406" y="12" width="3" height="3" fill="currentColor"/>
+    <rect x="3.91406" y="12" width="3" height="3" fill="currentColor"/>
+    <rect x="0.914062" y="9" width="3" height="3" fill="currentColor"/>
+    <rect x="0.914062" y="6" width="3" height="3" fill="currentColor"/>
+    <rect x="0.914062" y="3" width="3" height="3" fill="currentColor"/>
+    <rect x="3.91406" width="3" height="3" fill="currentColor"/>
+  </symbol>
+  <symbol id="dash-with-dots" width="25" height="24" viewBox="0 0 25 24" fill="none">
+    <path fillRule="evenodd" clipRule="evenodd" d="M7 8L7 5H4V8L7 8ZM21 5V8L18 8V5H21ZM21 17V20H18V17H21ZM7 17L7 20H4V17H7ZM14 14V15H11V14V13V12V11V10H14V11V12V13V14ZM18 13V14V15H15V14V13V12V11V10H18V11V12V13ZM10 14V13V12V11V10H7V11V12L7 13V14V15H10V14Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="minus" width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <path fillRule="evenodd" clipRule="evenodd" d="M4.5 10.5H7.5H10.5H13.5H16.5H19.5V13.5H16.5H13.5L10.5 13.5L7.5 13.5H4.5V10.5Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="plus" width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <path fillRule="evenodd" clipRule="evenodd" d="M13.5 4.5H10.5V7.5V10.5H7.5H4.5V13.5H7.5H10.5V16.5V19.5H13.5V16.5V13.5H16.5H19.5V10.5H16.5H13.5V7.5V4.5ZM13.5 13.5H10.5V10.5H13.5V13.5Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="circles-outline" width="200" height="200" viewBox="0 0 200 200" fill="none">
+    <path fillRule="evenodd" clipRule="evenodd" d="M28.0102 99.241H48.2263C48.7786 99.241 49.2263 99.6887 49.2263 100.241C49.2263 100.793 48.7786 101.241 48.2263 101.241H28.0102C28.5453 140.678 60.6807 172.482 100.244 172.482C139.808 172.482 171.944 140.678 172.479 101.241H152.261C151.709 101.241 151.261 100.793 151.261 100.241C151.261 99.6887 151.709 99.241 152.261 99.241H172.479C171.944 59.8044 139.808 28 100.244 28C60.6807 28 28.5453 59.8044 28.0102 99.241ZM26.0034 100.241C26.0034 59.2388 59.2423 26 100.244 26C141.247 26 174.485 59.2388 174.485 100.241C174.485 141.243 141.247 174.482 100.244 174.482C59.2423 174.482 26.0034 141.243 26.0034 100.241ZM100.239 71.3995C84.3099 71.3995 71.3971 84.3123 71.3971 100.241C71.3971 116.17 84.3099 129.082 100.239 129.082C116.167 129.082 129.08 116.17 129.08 100.241C129.08 84.3123 116.167 71.3995 100.239 71.3995ZM69.3971 100.241C69.3971 83.2077 83.2053 69.3995 100.239 69.3995C117.272 69.3995 131.08 83.2077 131.08 100.241C131.08 117.274 117.272 131.082 100.239 131.082C83.2053 131.082 69.3971 117.274 69.3971 100.241Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="cropped-circles-outline" width="200" height="200" viewBox="0 0 200 200" fill="none">
+    <path fillRule="evenodd" clipRule="evenodd" d="M34.1998 70.8271C46.3134 43.6301 74.0188 26.6407 103.916 28.0854C104.467 28.1121 104.936 27.6865 104.963 27.1349C104.99 26.5832 104.564 26.1144 104.012 26.0878C73.297 24.6035 44.8243 42.0577 32.3728 70.0133L33.2863 70.4202L32.3728 70.0134C19.9215 97.9701 26.0626 130.66 47.8215 152.266L48.478 151.605L47.8216 152.266C69.5801 173.87 102.468 179.939 130.576 167.54L130.173 166.625L130.576 167.54C158.687 155.138 176.226 126.819 174.7 96.28C174.672 95.7284 174.203 95.3036 173.651 95.3311C173.1 95.3587 172.675 95.8282 172.702 96.3798C174.187 126.085 157.127 153.64 129.769 165.71C102.411 177.778 70.4037 171.869 49.2308 150.847C28.0596 129.824 22.0874 98.0229 34.1998 70.8271ZM58.0842 82.4694C65.0694 64.282 81.6152 52.4603 99.9229 52.4636C118.231 52.4666 134.773 64.2943 141.753 82.4845C148.735 100.682 144.732 121.576 131.655 135.365C131.275 135.766 131.292 136.399 131.692 136.779C132.093 137.159 132.726 137.142 133.106 136.741C146.73 122.376 150.87 100.663 143.62 81.768C136.367 62.8654 119.122 50.4668 99.9232 50.4636C80.7245 50.4601 63.4759 62.8525 56.2171 81.7523C48.9612 100.645 53.0941 122.36 66.7134 136.731C67.0933 137.132 67.7262 137.149 68.1271 136.769C68.528 136.389 68.5449 135.756 68.165 135.355C55.0919 121.561 51.0961 100.665 58.0842 82.4694ZM80.4616 92.5701C83.7494 84.2736 91.5362 78.884 100.15 78.8856C108.762 78.8872 116.547 84.2794 119.833 92.5767C123.12 100.879 121.235 110.41 115.08 116.699C114.694 117.094 114.701 117.727 115.096 118.114C115.49 118.5 116.123 118.493 116.51 118.098C123.226 111.236 125.265 100.865 121.692 91.8403L120.863 92.1689L121.692 91.8403C118.117 82.8116 109.616 76.8874 100.15 76.8856C90.6835 76.8838 82.18 82.8052 78.6023 91.8332C75.026 100.856 77.0623 111.228 83.7761 118.093C84.1622 118.488 84.7953 118.495 85.1902 118.109C85.585 117.723 85.5921 117.09 85.206 116.695C79.0534 110.404 77.1715 100.871 80.4616 92.5701L79.5319 92.2017L80.4616 92.5701Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="hollow-cross-outline" width="200" height="200" viewBox="0 0 200 200" fill="none">
+    <path fillRule="evenodd" clipRule="evenodd" d="M87.6482 25C88.2005 25 88.6482 25.4477 88.6482 26V87.6506C88.6482 88.2029 88.2005 88.6506 87.6482 88.6506H25.9976C25.4453 88.6506 24.9976 88.2029 24.9976 87.6506C24.9976 87.0984 25.4453 86.6506 25.9976 86.6506H86.6482V26C86.6482 25.4477 87.0959 25 87.6482 25ZM24.9976 111.514C24.9976 110.962 25.4453 110.514 25.9976 110.514H87.6482C88.2005 110.514 88.6482 110.962 88.6482 111.514V173.165C88.6482 173.717 88.2005 174.165 87.6482 174.165C87.0959 174.165 86.6482 173.717 86.6482 173.165V112.514H25.9976C25.4453 112.514 24.9976 112.066 24.9976 111.514ZM112.512 26C112.512 25.4477 112.064 25 111.512 25C110.959 25 110.512 25.4477 110.512 26V87.6506C110.512 88.2029 110.959 88.6506 111.512 88.6506H173.162C173.715 88.6506 174.162 88.2029 174.162 87.6506C174.162 87.0984 173.715 86.6506 173.162 86.6506H112.512V26ZM110.512 111.514C110.512 110.962 110.959 110.514 111.512 110.514H173.162C173.715 110.514 174.162 110.962 174.162 111.514C174.162 112.066 173.715 112.514 173.162 112.514H112.512V173.165C112.512 173.717 112.064 174.165 111.512 174.165C110.959 174.165 110.512 173.717 110.512 173.165V111.514Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="sphere-outline" width="200" height="200" viewBox="0 0 200 200" fill="none">
+    <path fillRule="evenodd" clipRule="evenodd" d="M100.25 27.9999C82.2475 27.9999 65.7827 34.5839 53.1323 45.4754C54.7493 45.3215 56.5481 45.459 58.4685 45.835C62.9939 46.7211 68.4735 48.9788 74.5323 52.3541C86.6623 59.1116 101.32 70.4649 115.656 84.8014C129.993 99.1378 141.346 113.795 148.104 125.925C151.479 131.984 153.737 137.464 154.623 141.989C155.007 143.953 155.142 145.79 154.971 147.435C165.896 134.776 172.503 118.286 172.503 100.252C172.503 60.3484 140.154 27.9999 100.25 27.9999ZM27.9976 100.252C27.9976 82.2482 34.5828 65.7821 45.476 53.1312C45.3221 54.7484 45.4595 56.5473 45.8356 58.468C46.7216 62.9933 48.9794 68.4729 52.3547 74.5317C59.1122 86.6618 70.4655 101.319 84.8019 115.656C99.1384 129.992 113.796 141.346 125.926 148.103C131.985 151.478 137.464 153.736 141.99 154.622C143.954 155.007 145.791 155.142 147.436 154.971C134.776 165.897 118.285 172.505 100.25 172.505C60.3461 172.505 27.9976 140.156 27.9976 100.252ZM25.9976 100.252C25.9976 59.2439 59.2415 25.9999 100.25 25.9999C141.259 25.9999 174.503 59.2439 174.503 100.252C174.503 141.261 141.259 174.505 100.25 174.505C59.2415 174.505 25.9976 141.261 25.9976 100.252ZM54.1019 73.5584C60.7463 85.4855 71.9723 99.9977 86.2161 114.242C100.46 128.485 114.972 139.711 126.899 146.356C132.869 149.682 138.14 151.83 142.374 152.659C146.651 153.497 149.599 152.943 151.271 151.271C152.943 149.599 153.497 146.65 152.66 142.373C151.831 138.139 149.682 132.869 146.356 126.899C139.712 114.972 128.486 100.459 114.242 86.2156C99.9983 71.9717 85.486 60.7457 73.5589 54.1013C67.5892 50.7756 62.3184 48.6268 58.0842 47.7977C53.8078 46.9604 50.8591 47.5144 49.1871 49.1865C47.515 50.8586 46.961 53.8072 47.7983 58.0837C48.6274 62.3178 50.7762 67.5886 54.1019 73.5584Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="five-circles-outline" width="200" height="200" viewBox="0 0 200 200" fill="none">
+    <path fillRule="evenodd" clipRule="evenodd" d="M100.187 27.0001C90.734 27.0001 83.0714 34.663 83.0714 44.1157C83.0714 53.5684 90.7343 61.2313 100.187 61.2313C109.639 61.2313 117.302 53.5684 117.302 44.1157C117.302 34.663 109.639 27.0001 100.187 27.0001ZM81.0714 44.1157C81.0714 33.5585 89.6293 25.0001 100.187 25.0001C110.743 25.0001 119.302 33.5585 119.302 44.1157C119.302 54.6729 110.744 63.2313 100.187 63.2313C89.6297 63.2313 81.0714 54.6729 81.0714 44.1157ZM46.8229 155.747C46.8229 146.295 54.4855 138.632 63.9381 138.632C73.3907 138.632 81.0533 146.295 81.0533 155.747C81.0533 165.2 73.3907 172.863 63.9381 172.863C54.4858 172.863 46.8229 165.2 46.8229 155.747ZM63.9381 136.632C53.3808 136.632 44.8229 145.19 44.8229 155.747C44.8229 166.305 53.3812 174.863 63.9381 174.863C74.4954 174.863 83.0533 166.305 83.0533 155.747C83.0533 145.19 74.4954 136.632 63.9381 136.632ZM119.328 155.747C119.328 146.295 126.991 138.632 136.443 138.632C145.896 138.632 153.559 146.295 153.559 155.747C153.559 165.2 145.896 172.863 136.443 172.863C126.991 172.863 119.328 165.2 119.328 155.747ZM136.443 136.632C125.886 136.632 117.328 145.19 117.328 155.747C117.328 166.305 125.887 174.863 136.443 174.863C147.001 174.863 155.559 166.305 155.559 155.747C155.559 145.19 147 136.632 136.443 136.632ZM142.153 86.6213C142.153 77.1686 149.815 69.5057 159.268 69.5057C168.72 69.5057 176.383 77.1686 176.383 86.6213C176.383 96.074 168.72 103.737 159.268 103.737C149.816 103.737 142.153 96.074 142.153 86.6213ZM159.268 67.5057C148.711 67.5057 140.153 76.0641 140.153 86.6213C140.153 97.1785 148.711 105.737 159.268 105.737C169.825 105.737 178.383 97.1785 178.383 86.6213C178.383 76.0641 169.825 67.5057 159.268 67.5057ZM41.1137 69.5057C31.6611 69.5057 23.9985 77.1686 23.9985 86.6213C23.9985 96.074 31.6611 103.737 41.1137 103.737C50.5664 103.737 58.2289 96.074 58.2289 86.6213C58.2289 77.1686 50.5664 69.5057 41.1137 69.5057ZM21.9985 86.6213C21.9985 76.0641 30.5565 67.5057 41.1137 67.5057C51.671 67.5057 60.2289 76.0641 60.2289 86.6213C60.2289 97.1785 51.671 105.737 41.1137 105.737C30.5565 105.737 21.9985 97.1785 21.9985 86.6213Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="snowflake-outline" width="200" height="200" viewBox="0 0 200 200" fill="none">
+    <path fillRule="evenodd" clipRule="evenodd" d="M100.487 24.9999C101.039 24.9999 101.487 25.4476 101.487 25.9999V98.7266L164.47 62.3634C164.948 62.0873 165.56 62.2512 165.836 62.7295C166.112 63.2078 165.948 63.8193 165.47 64.0955L102.486 100.459L165.47 136.822C165.948 137.099 166.112 137.71 165.836 138.188C165.56 138.667 164.948 138.831 164.47 138.555L101.487 102.191V174.918C101.487 175.47 101.039 175.918 100.487 175.918C99.9347 175.918 99.487 175.47 99.487 174.918V102.191L36.5031 138.555C36.0248 138.831 35.4132 138.667 35.1371 138.188C34.8609 137.71 35.0248 137.099 35.5031 136.822L98.4864 100.459L35.5031 64.0955C35.0248 63.8193 34.8609 63.2078 35.1371 62.7295C35.4132 62.2512 36.0248 62.0873 36.5031 62.3634L99.487 98.7272V25.9999C99.487 25.4476 99.9347 24.9999 100.487 24.9999Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="cross-modal" width="88" height="88" viewBox="0 0 88 88" fill="none">
+    <rect width="88" height="88" fill="white"/>
+    <path d="M26 26L62.0624 62.0624" stroke="black" stroke-width="2"/>
+    <path d="M26 62.0625L62.0624 26.0001" stroke="black" stroke-width="2"/>
+    <rect x="43.9531" y="39" width="7" height="7" transform="rotate(45 43.9531 39)" fill="white"/>
+  </symbol>
+  <symbol id="filled-square" width="25" height="24" viewBox="0 0 25 24" fill="none">
+    <path fillRule="evenodd" clipRule="evenodd" d="M16.5 8H8.5V16H16.5V8Z" fill="currentColor"/>
+    <path fillRule="evenodd" clipRule="evenodd" d="M16.5 8H8.5V16H16.5V8Z" fill="currentColor" fillOpacity="0.2"/>
+    <path fillRule="evenodd" clipRule="evenodd" d="M16.5 8H8.5V16H16.5V8Z" fill="currentColor" fillOpacity="0.2"/>
+  </symbol>
+  <symbol id="menu" width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <path fillRule="evenodd" clipRule="evenodd" d="M6 2H2V6H6V2ZM14 2H10V6H14V2ZM18 2H22V6H18V2ZM6 10H2V14H6V10ZM10 10H14V14H10V10ZM22 10H18V14H22V10ZM2 18H6V22H2V18ZM14 18H10V22H14V18ZM18 18H22V22H18V18Z" fill="currentColor"/>
+    <path fillRule="evenodd" clipRule="evenodd" d="M6 2H2V6H6V2ZM14 2H10V6H14V2ZM18 2H22V6H18V2ZM6 10H2V14H6V10ZM10 10H14V14H10V10ZM22 10H18V14H22V10ZM2 18H6V22H2V18ZM14 18H10V22H14V18ZM18 18H22V22H18V18Z" fill="currentColor" fillOpacity="0.2"/>
+    <path fillRule="evenodd" clipRule="evenodd" d="M6 2H2V6H6V2ZM14 2H10V6H14V2ZM18 2H22V6H18V2ZM6 10H2V14H6V10ZM10 10H14V14H10V10ZM22 10H18V14H22V10ZM2 18H6V22H2V18ZM14 18H10V22H14V18ZM18 18H22V22H18V18Z" fill="currentColor" fillOpacity="0.2"/>
+  </symbol>
+  <symbol id="checkbox-unfilled" width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <path fillRule="evenodd" clipRule="evenodd" d="M21 3H3V21H21V3ZM19 5V19H5V5H19Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="checkbox-filled" width="25" height="24" viewBox="0 0 25 24" fill="none">
+    <path fillRule="evenodd" clipRule="evenodd" d="M3 3H21V21H3V3ZM19 19V5H5V19H19ZM7 7H17V17H7V7Z" fill="currentColor"/>
+    <path fillRule="evenodd" clipRule="evenodd" d="M3 3H21V21H3V3ZM19 19V5H5V19H19ZM7 7H17V17H7V7Z" fill="currentColor" fillOpacity="0.2"/>
+    <path fillRule="evenodd" clipRule="evenodd" d="M3 3H21V21H3V3ZM19 19V5H5V19H19ZM7 7H17V17H7V7Z" fill="currentColor" fillOpacity="0.2"/>
+  </symbol>
+  <symbol id="cross" width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <path d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="info" width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <rect width="24" height="24" fill="currentColor"/>
+    <rect width="24" height="24" fill="currentColor" fillOpacity="0.2"/>
+    <rect width="24" height="24" fill="currentColor" fillOpacity="0.2"/>
+    <path fillRule="evenodd" clipRule="evenodd" d="M11 7.01712V6.01854V5.99857V5H13V5.99857V6.01854V7.01712H11ZM13 11.0114V17.0029H15V19H13H11H9V17.0029H11V13.0086H9V11.0114H11H12H13Z" fill="white"/>
+  </symbol>
+  <symbol id="file" width="25" height="24" viewBox="0 0 25 24" fill="none">
+    <g clip-path="url(#clip0_2774_18907)">
+      <rect x="11.6667" y="1" width="2.44444" height="2.44444" fill="currentColor"/>
+      <rect x="11.6667" y="1" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="11.6667" y="1" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="9.22235" y="1" width="2.44444" height="2.44444" fill="currentColor"/>
+      <rect x="9.22235" y="1" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="9.22235" y="1" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="11.6667" y="3.44385" width="2.44444" height="2.44444" fill="currentColor"/>
+      <rect x="11.6667" y="3.44385" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="11.6667" y="3.44385" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="11.6667" y="5.88948" width="2.44444" height="2.44444" fill="currentColor"/>
+      <rect x="11.6667" y="5.88948" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="11.6667" y="5.88948" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="11.6667" y="8.33333" width="2.44444" height="2.44444" fill="currentColor"/>
+      <rect x="11.6667" y="8.33333" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="11.6667" y="8.33333" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="14.1112" y="8.33333" width="2.44444" height="2.44444" fill="currentColor"/>
+      <rect x="14.1112" y="8.33333" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="14.1112" y="8.33333" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="16.5557" y="8.33333" width="2.44444" height="2.44444" fill="currentColor"/>
+      <rect x="16.5557" y="8.33333" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="16.5557" y="8.33333" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="4.33344" y="1" width="2.44444" height="2.44444" fill="currentColor"/>
+      <rect x="4.33344" y="1" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="4.33344" y="1" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="6.77783" y="1" width="2.44444" height="2.44444" fill="currentColor"/>
+      <rect x="6.77783" y="1" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="6.77783" y="1" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="4.33344" y="5.88948" width="2.44444" height="2.44444" fill="currentColor"/>
+      <rect x="4.33344" y="5.88948" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="4.33344" y="5.88948" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="4.33344" y="3.44385" width="2.44444" height="2.44444" fill="currentColor"/>
+      <rect x="4.33344" y="3.44385" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="4.33344" y="3.44385" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="19.0001" y="10.7772" width="2.44444" height="2.44444" fill="currentColor"/>
+      <rect x="19.0001" y="10.7772" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="19.0001" y="10.7772" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="19.0001" y="8.33333" width="2.44444" height="2.44444" fill="currentColor"/>
+      <rect x="19.0001" y="8.33333" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="19.0001" y="8.33333" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="16.5557" y="5.88948" width="2.44444" height="2.44444" fill="currentColor"/>
+      <rect x="16.5557" y="5.88948" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="16.5557" y="5.88948" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="14.1112" y="3.44385" width="2.44444" height="2.44444" fill="currentColor"/>
+      <rect x="14.1112" y="3.44385" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="14.1112" y="3.44385" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="19.0001" y="13.2228" width="2.44444" height="2.44444" fill="currentColor"/>
+      <rect x="19.0001" y="13.2228" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="19.0001" y="13.2228" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="19.0001" y="15.6667" width="2.44444" height="2.44444" fill="currentColor"/>
+      <rect x="19.0001" y="15.6667" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="19.0001" y="15.6667" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="19.0001" y="18.1105" width="2.44444" height="2.44444" fill="currentColor"/>
+      <rect x="19.0001" y="18.1105" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="19.0001" y="18.1105" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="19.0001" y="20.5562" width="2.44444" height="2.44444" fill="currentColor"/>
+      <rect x="19.0001" y="20.5562" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="19.0001" y="20.5562" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="11.6667" y="20.5562" width="2.44444" height="2.44444" fill="currentColor"/>
+      <rect x="11.6667" y="20.5562" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="11.6667" y="20.5562" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="14.1112" y="20.5562" width="2.44444" height="2.44444" fill="currentColor"/>
+      <rect x="14.1112" y="20.5562" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="14.1112" y="20.5562" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="16.5557" y="20.5562" width="2.44444" height="2.44444" fill="currentColor"/>
+      <rect x="16.5557" y="20.5562" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="16.5557" y="20.5562" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="9.22235" y="20.5562" width="2.44444" height="2.44444" fill="currentColor"/>
+      <rect x="9.22235" y="20.5562" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="9.22235" y="20.5562" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="6.77783" y="20.5562" width="2.44444" height="2.44444" fill="currentColor"/>
+      <rect x="6.77783" y="20.5562" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="6.77783" y="20.5562" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="4.33344" y="20.5562" width="2.44444" height="2.44444" fill="currentColor"/>
+      <rect x="4.33344" y="20.5562" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="4.33344" y="20.5562" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="4.33344" y="18.1105" width="2.44444" height="2.44444" fill="currentColor"/>
+      <rect x="4.33344" y="18.1105" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="4.33344" y="18.1105" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="4.33344" y="15.6667" width="2.44444" height="2.44444" fill="currentColor"/>
+      <rect x="4.33344" y="15.6667" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="4.33344" y="15.6667" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="4.33344" y="13.2228" width="2.44444" height="2.44444" fill="currentColor"/>
+      <rect x="4.33344" y="13.2228" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="4.33344" y="13.2228" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="4.33344" y="10.7772" width="2.44444" height="2.44444" fill="currentColor"/>
+      <rect x="4.33344" y="10.7772" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="4.33344" y="10.7772" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="4.33344" y="8.33333" width="2.44444" height="2.44444" fill="currentColor"/>
+      <rect x="4.33344" y="8.33333" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+      <rect x="4.33344" y="8.33333" width="2.44444" height="2.44444" fill="currentColor" fillOpacity="0.2"/>
+    </g>
+    <defs>
+      <clipPath id="clip0_2774_18907">
+        <rect width="17.1111" height="22" fill="white" transform="translate(4.33344 1)"/>
+      </clipPath>
+    </defs>
+  </symbol>
+  <symbol id="redirect" width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <path fillRule="evenodd" clipRule="evenodd" d="M7.57339 17.9706L6.15918 16.5564L14.6445 8.0711L13.2302 6.65689L14.6445 5.24268L16.0587 6.65689L17.4729 5.24268L18.8871 6.65689L17.4729 8.0711L18.8871 9.48532L17.4729 10.8995L16.0587 9.48532L7.57339 17.9706ZM17.4729 13.728L16.0587 12.3137L17.4729 10.8995L18.8871 12.3137L17.4729 13.728ZM17.4729 13.728L18.8871 15.1422L17.4729 16.5564L16.0587 15.1422L17.4729 13.728ZM10.4018 6.65689L11.816 8.0711L13.2302 6.65689L11.816 5.24268L10.4018 6.65689ZM10.4018 6.65689L8.98761 5.24268L7.57339 6.65689L8.98761 8.0711L10.4018 6.65689Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="copy-link" width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <path fillRule="evenodd" clipRule="evenodd" d="M4 6V8H2V16H4V18H11V16H4V8H11V6H4ZM17 11H7V13H17V11ZM20 16V8H22V16H20ZM20 16V18H13V16H20ZM20 8H13V6H20V8Z" fill="currentColor"/>
+    <path fillRule="evenodd" clipRule="evenodd" d="M4 6V8H2V16H4V18H11V16H4V8H11V6H4ZM17 11H7V13H17V11ZM20 16V8H22V16H20ZM20 16V18H13V16H20ZM20 8H13V6H20V8Z" fill="currentColor" fillOpacity="0.2"/>
+    <path fillRule="evenodd" clipRule="evenodd" d="M4 6V8H2V16H4V18H11V16H4V8H11V6H4ZM17 11H7V13H17V11ZM20 16V8H22V16H20ZM20 16V18H13V16H20ZM20 8H13V6H20V8Z" fill="currentColor" fillOpacity="0.2"/>
+  </symbol>
+  <symbol id="telegram" width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <path fillRule="evenodd" clipRule="evenodd" d="M14.0318 6.5735C12.2406 7.33767 8.66059 8.9193 3.29189 11.3184C2.42009 11.674 1.96341 12.0218 1.92184 12.362C1.85158 12.9368 2.55343 13.1632 3.50917 13.4714C3.63917 13.5133 3.77387 13.5568 3.91197 13.6028C4.85227 13.9163 6.11714 14.2831 6.77469 14.2977C7.37115 14.3109 8.03688 14.0587 8.77186 13.541C13.788 10.0681 16.3774 8.31267 16.5399 8.27483C16.6546 8.24813 16.8135 8.21456 16.9212 8.31273C17.0289 8.41089 17.0183 8.59681 17.0069 8.64668C16.9374 8.95069 14.1824 11.5778 12.7566 12.9373C12.3122 13.3611 11.9969 13.6617 11.9324 13.7304C11.7881 13.8842 11.6409 14.0297 11.4995 14.1695C10.6259 15.0332 9.97086 15.6809 11.5358 16.7387C12.2878 17.247 12.8896 17.6673 13.4899 18.0866C14.1456 18.5446 14.7996 19.0014 15.6457 19.5702C15.8612 19.7152 16.0671 19.8657 16.2676 20.0123C17.0307 20.5703 17.7162 21.0715 18.5631 20.9916C19.0552 20.9451 19.5635 20.4705 19.8216 19.055C20.4317 15.7098 21.631 8.46165 21.9081 5.47487C21.9324 5.21319 21.9018 4.87829 21.8773 4.73128C21.8528 4.58426 21.8015 4.3748 21.6152 4.21974C21.3946 4.03611 21.0539 3.99738 20.9016 4.00013C20.2089 4.01265 19.1462 4.39166 14.0318 6.5735Z" fill="currentColor"/>
+    <path fillRule="evenodd" clipRule="evenodd" d="M14.0318 6.5735C12.2406 7.33767 8.66059 8.9193 3.29189 11.3184C2.42009 11.674 1.96341 12.0218 1.92184 12.362C1.85158 12.9368 2.55343 13.1632 3.50917 13.4714C3.63917 13.5133 3.77387 13.5568 3.91197 13.6028C4.85227 13.9163 6.11714 14.2831 6.77469 14.2977C7.37115 14.3109 8.03688 14.0587 8.77186 13.541C13.788 10.0681 16.3774 8.31267 16.5399 8.27483C16.6546 8.24813 16.8135 8.21456 16.9212 8.31273C17.0289 8.41089 17.0183 8.59681 17.0069 8.64668C16.9374 8.95069 14.1824 11.5778 12.7566 12.9373C12.3122 13.3611 11.9969 13.6617 11.9324 13.7304C11.7881 13.8842 11.6409 14.0297 11.4995 14.1695C10.6259 15.0332 9.97086 15.6809 11.5358 16.7387C12.2878 17.247 12.8896 17.6673 13.4899 18.0866C14.1456 18.5446 14.7996 19.0014 15.6457 19.5702C15.8612 19.7152 16.0671 19.8657 16.2676 20.0123C17.0307 20.5703 17.7162 21.0715 18.5631 20.9916C19.0552 20.9451 19.5635 20.4705 19.8216 19.055C20.4317 15.7098 21.631 8.46165 21.9081 5.47487C21.9324 5.21319 21.9018 4.87829 21.8773 4.73128C21.8528 4.58426 21.8015 4.3748 21.6152 4.21974C21.3946 4.03611 21.0539 3.99738 20.9016 4.00013C20.2089 4.01265 19.1462 4.39166 14.0318 6.5735Z" fill="currentColor" fillOpacity="0.2"/>
+    <path fillRule="evenodd" clipRule="evenodd" d="M14.0318 6.5735C12.2406 7.33767 8.66059 8.9193 3.29189 11.3184C2.42009 11.674 1.96341 12.0218 1.92184 12.362C1.85158 12.9368 2.55343 13.1632 3.50917 13.4714C3.63917 13.5133 3.77387 13.5568 3.91197 13.6028C4.85227 13.9163 6.11714 14.2831 6.77469 14.2977C7.37115 14.3109 8.03688 14.0587 8.77186 13.541C13.788 10.0681 16.3774 8.31267 16.5399 8.27483C16.6546 8.24813 16.8135 8.21456 16.9212 8.31273C17.0289 8.41089 17.0183 8.59681 17.0069 8.64668C16.9374 8.95069 14.1824 11.5778 12.7566 12.9373C12.3122 13.3611 11.9969 13.6617 11.9324 13.7304C11.7881 13.8842 11.6409 14.0297 11.4995 14.1695C10.6259 15.0332 9.97086 15.6809 11.5358 16.7387C12.2878 17.247 12.8896 17.6673 13.4899 18.0866C14.1456 18.5446 14.7996 19.0014 15.6457 19.5702C15.8612 19.7152 16.0671 19.8657 16.2676 20.0123C17.0307 20.5703 17.7162 21.0715 18.5631 20.9916C19.0552 20.9451 19.5635 20.4705 19.8216 19.055C20.4317 15.7098 21.631 8.46165 21.9081 5.47487C21.9324 5.21319 21.9018 4.87829 21.8773 4.73128C21.8528 4.58426 21.8015 4.3748 21.6152 4.21974C21.3946 4.03611 21.0539 3.99738 20.9016 4.00013C20.2089 4.01265 19.1462 4.39166 14.0318 6.5735Z" fill="currentColor" fillOpacity="0.2"/>
+  </symbol>
+  <symbol id="vkontakte" width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <path fillRule="evenodd" clipRule="evenodd" d="M1 5.33337C1.17323 13.6617 5.33056 18.6667 12.6193 18.6667H13.0325V13.9019C15.7109 14.1689 17.7361 16.1308 18.5489 18.6667H22.3333C21.294 14.8763 18.5622 12.7808 16.8566 11.98C18.5622 10.9924 20.9607 8.58996 21.5337 5.33337H18.0958C17.3496 7.97602 15.1379 10.3784 13.0325 10.6053V5.33337H9.59456V14.5693C7.46256 14.0354 4.77098 11.4462 4.65105 5.33337H1Z" fill="currentColor"/>
+    <path fillRule="evenodd" clipRule="evenodd" d="M1 5.33337C1.17323 13.6617 5.33056 18.6667 12.6193 18.6667H13.0325V13.9019C15.7109 14.1689 17.7361 16.1308 18.5489 18.6667H22.3333C21.294 14.8763 18.5622 12.7808 16.8566 11.98C18.5622 10.9924 20.9607 8.58996 21.5337 5.33337H18.0958C17.3496 7.97602 15.1379 10.3784 13.0325 10.6053V5.33337H9.59456V14.5693C7.46256 14.0354 4.77098 11.4462 4.65105 5.33337H1Z" fill="currentColor" fillOpacity="0.2"/>
+    <path fillRule="evenodd" clipRule="evenodd" d="M1 5.33337C1.17323 13.6617 5.33056 18.6667 12.6193 18.6667H13.0325V13.9019C15.7109 14.1689 17.7361 16.1308 18.5489 18.6667H22.3333C21.294 14.8763 18.5622 12.7808 16.8566 11.98C18.5622 10.9924 20.9607 8.58996 21.5337 5.33337H18.0958C17.3496 7.97602 15.1379 10.3784 13.0325 10.6053V5.33337H9.59456V14.5693C7.46256 14.0354 4.77098 11.4462 4.65105 5.33337H1Z" fill="currentColor" fillOpacity="0.2"/>
+  </symbol>
+  <symbol id="check" width="25" height="24" viewBox="0 0 25 24" fill="none">
+    <path fillRule="evenodd" clipRule="evenodd" d="M17.0834 7H19.0834V9H17.0834V7ZM15.0834 11V9H17.0834V11H15.0834ZM13.0834 13V11H15.0834V13H13.0834ZM11.0834 15V13H13.0834V15H11.0834ZM9.08337 15H11.0834V17H9.08337V15ZM7.08337 13H9.08337V15H7.08337V13ZM7.08337 13H5.08337V11H7.08337V13Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="close" width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <path fillRule="evenodd" clipRule="evenodd" d="M7.67411 5.63603L5.55279 7.75735L7.67411 9.87867L9.79543 12L7.67411 14.1213L5.55279 16.2426L7.67411 18.364L9.79543 16.2426L11.9167 14.1213L14.0381 16.2426L16.1594 18.364L18.2807 16.2426L16.1594 14.1213L14.0381 12L16.1594 9.87867L18.2807 7.75735L16.1594 5.63603L14.0381 7.75735L11.9167 9.87867L9.79543 7.75735L7.67411 5.63603ZM14.0381 12L11.9167 14.1213L9.79543 12L11.9167 9.87867L14.0381 12Z" fill="currentColor"/>
+  </symbol>
+
+</svg>

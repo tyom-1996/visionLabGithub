@@ -1,0 +1,265 @@
+@use '@/styles/mixins.scss' as *;
+
+.default {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    font-family: var(--font-secondary);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 124%; /* 22.32px */
+    letter-spacing: -0.36px;
+    transition: var(--transition-duration);
+
+    svg {
+        transition: var(--transition-duration);
+    }
+
+    img {
+        display: block;
+    }
+
+    &.disabled,
+    &:disabled {
+        pointer-events: none;
+    }
+}
+
+.primary,
+.secondary,
+.white-primary-text {
+    gap: 8px;
+    padding: 36px 44px;
+
+    @include sm {
+        padding: 24px 32px;
+    }
+
+    &.smallSize {
+        padding: 24px 32px;
+    }
+}
+
+.primary,
+.secondary {
+    color: var(--color-white-500);
+    background: var(--color-primary);
+    // for animation
+    transition: clip-path 600ms cubic-bezier(0.85, 0.09, 0.15, 0.91) 800ms;
+    clip-path: inset(0 0 0 0);
+
+    svg {
+        color: var(--color-white-500);
+    }
+
+    @include nonTouchDevice {
+        &:hover {
+          background: var(--color-blue-400);
+        }
+    }
+
+    &.disabled,
+    &:disabled {
+        color: var(--color-blue-600);
+
+        svg {
+            color: var(--color-blue-600);
+        }
+    }
+
+    &:active {
+        background: var(--color-blue-300);
+
+        svg {
+            background: var(--color-blue-300);
+        }
+    }
+
+    :global(html:not(.is-loaded)) & {
+        clip-path: inset(0 100% 0 0);
+    }
+}
+
+.transparent-white,
+.white-primary-text,
+.white-black {
+    background: var(--color-white);
+}
+
+.white-primary-text,
+.transparent-primary-text {
+    @include nonTouchDevice {
+        &:hover {
+            color: var(--color-primary);
+
+            svg {
+                color: var(--color-primary);
+            }
+
+            div svg * {
+                fill: var(--color-primary);
+            }
+        }
+    }
+
+    &.disabled,
+    &:disabled {
+        color: var(--color-grey-900);
+
+        svg {
+            color: var(--color-grey-900);
+        }
+    }
+
+    &:active {
+        color: var(--color-blue-300);
+
+        svg {
+            color: var(--color-blue-300);
+        }
+    }
+}
+
+.transparent-white {
+    transform: color var(--transition-duration);
+    // for animation
+    transition: clip-path 600ms cubic-bezier(0.85, 0.09, 0.15, 0.91) 700ms;
+    clip-path: inset(0 0 0 0);
+
+    @include nonTouchDevice {
+        &:hover {
+            color: var(--color-primary);
+        }
+    }
+
+    &.disabled,
+    &:disabled {
+        color: var(--color-grey-900);
+
+        svg {
+            color: var(--color-grey-900);
+        }
+    }
+
+    &:active {
+        background: var(--color-white);
+    }
+
+    :global(html:not(.is-loaded)) & {
+        clip-path: inset(0 100% 0 0);
+    }
+}
+
+.white-black,
+.transparent-black,
+.always-black {
+    @include nonTouchDevice {
+        &:hover {
+            background: var(--color-black);
+            color: var(--color-white);
+
+            svg {
+                color: var(--color-white);
+            }
+        }
+    }
+
+    &.disabled,
+    &:disabled {
+        color: var(--color-grey-900);
+
+        svg {
+            color: var(--color-grey-900);
+        }
+    }
+
+    &:active {
+        background: var(--color-black);
+        color: var(--color-white);
+
+        svg {
+            color: var(--color-white);
+        }
+    }
+}
+
+.always-black {
+    background: var(--color-black);
+    color: var(--color-white);
+
+    svg {
+        color: var(--color-white);
+    }
+}
+
+.svgWrapper {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-shrink: 0;
+
+    :global(.button-icon-rotate) & svg {
+        transform: rotate(0);
+        transition: transform 500ms cubic-bezier(0.85, 0.09, 0.15, 0.91);
+    }
+    :global(.button-icon-rotate):hover & svg {
+        transform: rotate(90deg);
+        transition: transform 500ms cubic-bezier(0.85, 0.09, 0.15, 0.91) 100ms;
+    }
+
+    :global(.button-icon-to-right):hover & svg {
+        animation: svg-to-right 500ms cubic-bezier(0.85, 0.09, 0.15, 0.91) both;
+    }
+
+    :global(.button-icon-to-down):hover & svg {
+        animation: svg-to-down 300ms cubic-bezier(0.85, 0.09, 0.15, 0.91) both;
+    }
+
+    :global(.button-icon-to-down-rotate-90) & {
+        transform: rotate(90deg);
+    }
+
+    :global(.button-icon-to-down-rotate-90):hover & {
+        svg {
+            animation: svg-to-right 500ms cubic-bezier(0.85, 0.09, 0.15, 0.91) both;
+        }
+    }
+
+    svg {
+        display: block;
+    }
+}
+
+@keyframes svg-to-right {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(200%, 0);
+  }
+  51% {
+    transform: translate(-200%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes svg-to-down {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 100%);
+  }
+  51% {
+    transform: translate(0, -100%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}

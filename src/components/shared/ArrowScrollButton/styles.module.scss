@@ -1,0 +1,15 @@
+@use '@/styles/mixins.scss' as *;
+
+.arrowBtn {
+  z-index: 99;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 16px;
+
+  svg {
+    transform: rotate(-90deg);
+    width: 10px;
+    height: 14px;
+  }
+}

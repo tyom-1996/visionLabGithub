@@ -1,0 +1,17 @@
+@use '@/styles/mixins.scss' as *;
+
+.partnersPageWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-size);
+  margin-top: 96px;
+
+  /* Задаём переменную, чтобы дочерние элементы могли этим пользоваться */
+  --gap-size: 192px;
+
+  @include sm {
+    margin-top: 64px;
+
+    --gap-size: 96px;
+  }
+}

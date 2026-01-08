@@ -1,0 +1,22 @@
+@use '@/styles/mixins.scss' as *;
+@use 'sass:map';
+
+.storiesList {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 64px 0;
+    background: var(--color-white);
+    gap: 96px 0;
+
+    @include lg {
+        gap: 64px;
+    }
+}
+
+.storyWrapper {
+    width: 50%;
+
+    @include lg {
+        width: 100%;
+    }
+}

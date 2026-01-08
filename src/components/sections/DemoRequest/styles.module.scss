@@ -1,0 +1,102 @@
+@use '@/styles/mixins.scss' as *;
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    padding-bottom: 24px;
+
+    @include lg {
+        flex-direction: column;
+        padding-bottom: 0px;
+        gap: 32px;
+        padding: var(--section-padding);
+    }
+
+    @include sm {
+        padding: 0;
+    }
+}
+
+.textWrapper {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+    padding-bottom: 24px;
+
+    @include lg {
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    @include sm {
+        padding: var(--section-padding);
+    }
+}
+.title {
+    font-family: var(--font-secondary);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 124%; /* 19.84px */
+    letter-spacing: -0.32px;
+    color: var(--color-text-secondary);
+
+    @include min-lg {
+        padding-left: 24px;
+    }
+}
+.description {
+    max-width: 300px;
+    font-family: var(--font-secondary);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 124%; /* 22.32px */
+    letter-spacing: -0.36px;
+    color: var(--color-black);
+
+    @include lg {
+        max-width: none;
+    }
+
+    @include sm {
+        font-size: 16px;
+    }
+
+    @include min-lg {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+.formWrapper {
+    width: 66.6%;
+    margin-left: 0.1%;
+    padding: 24px;
+    background: var(--color-white);
+
+    @include lg {
+        width: 100%;
+        padding: var(--section-padding);
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    @include sm {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+}
+
+.submitBtn {
+    width: 50%;
+
+    @include lg {
+        width: fit-content;
+        padding: 24px 32px;
+    }
+
+    @include sm {
+        width: 100%;
+    }
+}

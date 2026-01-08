@@ -1,0 +1,206 @@
+@use '@/styles/mixins.scss' as *;
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+    @include sm {
+        gap: 24px;
+    }
+}
+
+.allSquaresWrapper {
+    display: flex;
+
+    @include lg {
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+
+.smallSquaresListContainer {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 32px;
+
+    @include lg {
+        width: 100%;
+        gap: 24px;
+        padding-bottom: 0;
+    }
+}
+.label {
+    max-width: 280px;
+    font-family: var(--font-secondary);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 124%; /* 19.84px */
+    letter-spacing: -0.32px;
+    color: var(--color-text-secondary);
+
+    @include min-lg {
+        padding-left: 24px;
+    }
+
+    @include lg {
+        max-width: none;
+    }
+}
+.smallSquaresList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 393px;
+
+    @include lg {
+        max-width: none;
+    }
+}
+.smallSquareWrapper {
+    display: flex;
+    gap: 12px;
+    padding-left: 16px;
+
+    svg {
+        flex-shrink: 0;
+        width: 24px;
+        height: 24px;
+    }
+
+    p {
+        font-family: var(--font-secondary);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 124%;
+        letter-spacing: -0.36px;
+
+        span {
+            font-size: 24px;
+            font-weight: 492;
+            line-height: 124%; /* 24.8px */
+        }
+    }
+
+    @include sm {
+        p {
+            font-size: 16px;
+            line-height: 124%;
+            letter-spacing: -0.32px;
+
+            span {
+                font-size: 20px;
+                line-height: 110%; /* 22px */
+            }
+        }
+    }
+}
+
+.bigSquaresList {
+    position: relative;
+    width: 66.66%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+    padding-left: 1px;
+
+    .bigSquareWrapper:nth-child(1) {
+        background: var(--color-primary);
+
+        .bigSquareTitle,
+        .bigSquareDescription {
+            color: var(--color-white);
+        }
+    }
+
+    @include min-lg {
+        // Стили для чётных элементов
+        .bigSquareWrapper:nth-child(even) {
+            width: calc((100% - 1px) / 2);
+        }
+
+        // Стили для нечётных элементов
+        .bigSquareWrapper:nth-child(odd) {
+            width: calc((100% - 2px) / 2);
+        }
+
+        &.displaceBottomRow {
+            padding-left: 0;
+
+            .bigSquareWrapper:nth-child(3) {
+                margin-left: calc((99.99% - 2px) / -2);
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 100%;
+                top: 0;
+                z-index: 1;
+                background-color: var(--color-border-general);
+            }
+
+            &::before {
+                left: calc(50% - 1px);
+            }
+        }
+    }
+
+    @include lg {
+        gap: 1px;
+        width: 100%;
+    }
+
+    @include sm {
+        flex-direction: column;
+    }
+}
+.bigSquareWrapper {
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 36px 37px;
+    background: var(--color-white);
+
+    @include lg {
+        width: calc((100% - 1px) / 2);
+        height: 360px;
+        padding: 32px;
+    }
+
+    @include sm {
+        width: 100%;
+        height: auto;
+        gap: 24px;
+        padding: 16px;
+    }
+}
+.bigSquareTitle {
+    font-family: var(--font-secondary);
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 100%; /* 96px */
+    letter-spacing: -7.68px;
+    word-break: break-all;
+
+    @include sm {
+        font-size: 48px;
+        letter-spacing: -3.84px;
+    }
+}
+.bigSquareDescription {
+    font-family: var(--font-secondary);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 124%; /* 22.32px */
+    letter-spacing: -0.36px;
+    color: var(--color-text-secondary);
+
+    @include sm {
+        font-size: 16px;
+    }
+}

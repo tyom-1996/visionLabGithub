@@ -1,0 +1,61 @@
+@use '@/styles/mixins.scss' as *;
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+    @include sm {
+        gap: 24px
+    }
+}
+
+.imageAndContent {
+    position: relative;
+    display: flex;
+
+    @include lg {
+        flex-direction: column;
+    }
+}
+
+.imageWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 33.33%;
+
+    @include lg {
+        position: absolute;
+        top: -224px;
+        right: 0;
+        width: fit-content;
+        padding: 0 var(--section-padding-size);
+    }
+
+    @include sm {
+        top: -124px;
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
+.contentWrapper {
+    width: 66.66%;
+
+    @include lg {
+        width: 100%;
+    }
+}
+
+.lottieWrapper {
+    width: 180px;
+    height: 180px;
+
+    @include sm {
+        width: 100px;
+        height: 100px;
+    }
+}

@@ -1,0 +1,92 @@
+@use 'mixins.scss' as *;
+
+:root {
+  // Colors
+  --background: #F4F5F6;
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-white-500: #F4F5F6;
+
+  --color-blue-300: #3038C6;
+  --color-blue-400: #363FDF;
+  --color-blue-500: #3C46F8;
+  --color-blue-600: #7A80FD;
+
+  --color-red-300: #C20032;
+  --color-red-400: #D70042;
+  --color-red-500: #ED2953;
+  --color-red-600: #FF97AC;
+
+  --color-grey-300: #585858;
+  --color-grey-400: #6B6B6B;
+  --color-grey-600: #999999;
+  --color-grey-700: #C6C6C6;
+  --color-grey-800: #DCDCDC;
+  --color-grey-900: #D2D0D0;
+
+  --color-primary: #3C46F8;
+  --color-text-primary: #333333;
+  --color-text-secondary: #585858;
+  --color-border-general: rgba(198, 198, 198, 0.3);
+  --color-border-general-on-white: #E6E7E8;
+  --color-border-grey: #C6C6C6;
+
+  // Transition durations
+  --transition-duration: 0.2s;
+  --transition-duration-x1-5: 0.3s;
+  --transition-duration-x2: 0.4s;
+  --transition-duration-x3: 0.6s;
+  --transition-duration-x4: 0.8s;
+  --transition-duration-x5: 1s;
+  --transition-duration-x6: 1.2s;
+  --transition-duration-x7: 1.4s;
+  --transition-duration-x8: 1.6s;
+
+  // Easing
+  --bezier-main: cubic-bezier(0.215, 0.61, 0.355, 1);
+
+  // Layout sizes
+  --size: 393;
+
+  /* Максимальная ширина страницы */
+  --max-width-page: 1330px;
+
+  /* Высота хедера для фиксации элементов */
+  --header-height: 56px;
+
+  --section-padding: 0px;
+  --section-padding-size: 0px;
+  --body-padding-size: 0px;
+
+  // преобразовать изображение в белый цвет
+  --filter-img-white: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(1000%) hue-rotate(180deg);
+  // преобразовать изображение в чёрный цвет
+  --filter-img-black: invert(1) brightness(0);
+
+  --transition-color: color 0.15s linear;
+  --transition-border-color: border-color 0.15s linear;
+  --transition-back-color: background-color 0.15s linear;
+
+  @include min-lg {
+    --body-padding-size: 56px;
+    --body-padding-size-minus: -56px;
+  }
+
+  @include xxl {
+    --size: 1920;
+  }
+
+  @include lg {
+    --section-padding: 0 24px;
+    --section-padding-size: 24px;
+  }
+
+  @include sm {
+    --section-padding: 0 16px;
+    --section-padding-size: 16px;
+  }
+
+  @include xs {
+    --size: 393;
+  }
+}

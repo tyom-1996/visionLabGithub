@@ -1,0 +1,37 @@
+@use '@/styles/mixins.scss' as *;
+
+.useCasesList {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 64px 0;
+
+  @include lg {
+    padding: var(--section-padding);
+    gap: 64px 1px;
+  }
+
+  @include sm {
+    padding: 0;
+    gap: 24px;
+  }
+
+  @include min-lg {
+    &::before,
+    &::after {
+      z-index: 0 !important;
+    }
+  }
+}
+
+.cardWrapper {
+  width: 33.33%;
+
+  @include lg {
+    width: calc((100% - 1px) / 2);
+  }
+
+  @include sm {
+    width: 100%;
+  }
+}

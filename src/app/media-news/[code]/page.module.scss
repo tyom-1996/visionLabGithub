@@ -1,0 +1,36 @@
+@use '@/styles/mixins.scss' as *;
+
+.newsMediaItemWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-size);
+    margin-top: var(--gap-size);
+
+    /* Задаём переменную, чтобы дочерние элементы могли этим пользоваться */
+    --gap-size: 96px;
+
+    @include sm {
+        --gap-size: 64px;
+    }
+}
+
+.preTitle {
+    margin-bottom: 24px;
+    margin-left: 33.33%;
+    padding: 0 24px;
+    font-family: var(--font-secondary);
+    font-size: 18px;
+    line-height: 124%;
+    letter-spacing: -0.36px;
+    color: var(--color-text-secondary);
+
+    @include lg {
+        margin-left: 0;
+        padding: 0 var(--section-padding-size);
+    }
+
+    @include sm {
+        font-size: 16px;
+        letter-spacing: -0.32px;
+    }
+}

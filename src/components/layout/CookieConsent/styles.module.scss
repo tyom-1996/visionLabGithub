@@ -1,0 +1,108 @@
+@use '@/styles/mixins.scss' as *;
+
+.container {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  
+
+  @include sm {
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: var(--section-padding);
+  }
+
+    .dialog {
+        background: var(--color-white);
+        color: var(--color-black);
+        padding: 32px 48px;
+        width: 100%;
+        max-width: 418px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        box-shadow: 0px 4px 44px rgba(0,0,0,0.1);
+        position: relative;
+
+        @include sm {
+            padding: 24px;
+        }
+
+        .infoIcon {
+            position: absolute;
+            top: 32px;
+            right: 23px;
+            pointer-events: none;
+
+            @include sm {
+                display: none;
+            }
+        }
+
+        .title {
+            font-weight: 600;
+            font-size: 18px;
+            white-space: nowrap;
+            font-family: var(--font-primary);
+            font-size: 18x;
+            font-weight: 600;
+            color: var(--color-text-primary);
+            line-height: 110%;
+        }
+
+        .text {
+            font-weight: 400;
+            font-size: 14px;
+            font-family: var(--font-primary);
+            line-height: 120%;
+            color: var(--color-text-primary);
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
+
+            @include xs {
+                grid-template-columns: 1fr;
+            }
+
+            .consentBtn {
+                font-weight: 600;
+                font-size: 14px;
+                white-space: nowrap;
+                font-family: var(--font-primary);
+                padding: 20px 34px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .accept {
+                background-color: var(--color-primary);
+                color: var(--color-white);
+            }
+
+            .decline {
+                background-color: var(--background);
+            }
+
+            .essential {
+                grid-column: 1 / -1;
+                background-color: var(--color-black);
+                color: var(--color-white);
+            }
+        }
+
+    }
+}
+
+
+
+
+

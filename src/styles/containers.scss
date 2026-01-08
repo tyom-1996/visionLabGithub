@@ -1,0 +1,26 @@
+@import "./mixins";
+
+.header-block {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+
+    @include sm {
+        gap: 48px;
+    }
+}
+
+.section-wrapper {
+    overflow: hidden;
+    padding: var(--section-padding);
+}
+
+.section-title {
+    font-size: 34px;
+    font-weight: 584;
+    line-height: 112%; /* 40.32px */
+
+    @include sm {
+        font-size: 24px;
+    }
+}

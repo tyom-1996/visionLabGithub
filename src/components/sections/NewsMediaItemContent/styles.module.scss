@@ -1,0 +1,137 @@
+@use '@/styles/mixins.scss' as *;
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    padding-bottom: 96px;
+
+    @include sm {
+        gap: 48px;
+        padding-bottom: 32px;
+    }
+}
+
+.mainImageWrapper {
+    display: flex;
+    flex-direction: column;
+}
+.mainImage {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+
+    @include lg {
+        height: 432px;
+    }
+
+    @include sm {
+        height: 210px;
+    }
+}
+.decorateUnderImg {
+    height: 24px;
+    background: var(--color-primary);
+    margin: 0 24px;
+
+    @include sm {
+        height: 16px;
+        margin: 0 16px;
+    }
+}
+
+.contentBlocksWrapper {
+    position: relative;
+    display: flex;
+
+    @include lg {
+        flex-direction: column;
+        gap: 24px;
+        padding: 0 var(--section-padding-size);
+    }
+}
+
+.shareBtnsContainer {
+    position: sticky;
+    top: calc(var(--header-height) + 40px);
+    width: 33.33%;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 24px;
+
+    @include lg {
+        position: static;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 0;
+    }
+}
+.shareBtnsWrapper {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+
+    @include lg {
+        flex-direction: row;
+    }
+}
+
+.contentTextWrapper {
+    width: 66.66%;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    padding: 0 24px;
+
+    @include lg {
+        padding: 0;
+        gap: 48px;
+        width: 100%;
+    }
+
+    @include sm {
+        gap: 48px;
+    }
+}
+
+.contactPromo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 24px;
+    background: var(--color-white);
+    margin-left: calc(33.33% + 1px);
+
+    @include lg {
+        margin-left: 0;
+    }
+}
+.contactQuestion {
+    font-size: 20px;
+    font-weight: 492;
+    line-height: 110%; /* 22px */
+}
+.contactInvite {
+    font-family: var(--font-secondary);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 124%; /* 22.32px */
+    letter-spacing: -0.36px;
+    color: var(--color-text-secondary);
+
+    a {
+        display: inline-flex;
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+        text-decoration-skip-ink: none;
+        text-decoration-thickness: auto;
+        text-underline-offset: auto;
+        text-underline-position: from-font;
+        transition: var(--transition-duration);
+
+        &:hover {
+            color: var(--color-primary);
+        }
+    }
+}

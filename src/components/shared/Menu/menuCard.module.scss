@@ -1,0 +1,154 @@
+@use '@/styles/mixins.scss' as *;
+
+.menuCardMainContent {
+    &.desktop {
+        overflow: auto;
+        max-height: 65vh;
+    }
+
+    &.shadow {
+        box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.10);
+    }
+}
+
+.menuCardTitle {
+    font-family: var(--font-secondary);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 116%; /* 16.24px */
+    letter-spacing: -0.28px;
+    color: var(--color-text-secondary);
+    padding: 20px 24px;
+
+    @include lg {
+        display: none;
+    }
+}
+.menuCardLinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+    padding: 0px 16px 16px;
+
+    @include lg {
+        padding: 0px 8px 16px;
+    }
+
+    @include sm {
+        flex-direction: column;
+        padding: 0px;
+        padding-bottom: 16px;
+    }
+}
+
+.menuCardLink {
+    width: calc((100% - 2px) / 3); // 2px - суммарный gap между тремя элементами (2 промежутка по 1px)
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 16px;
+    cursor: pointer;
+    transition: all var(--transition-duration);
+
+    @include nonTouchDevice {
+        &:hover {
+            background-color: var(--background);
+
+            .menuCardLinkArrow {
+                opacity: 1;
+            }
+        }
+    }
+
+    @include sm {
+        width: 100%;
+    }
+}
+.menuCardLinkContent {
+    display: flex;
+    gap: 8px;
+}
+.menuCardLinkTitleWrapper {
+    display: flex;
+}
+.menuCardLinkTitle {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-family: var(--font-secondary);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 124%; /* 19.84px */
+    letter-spacing: -0.32px;
+
+    span:first-child {
+        font-family: var(--font-secondary);
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: -0.32px;
+        color: var(--color-black);
+    }
+    span:nth-child(2) {
+        opacity: 0.6;
+        font-family: var(--font-secondary);
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: -1.28px;
+        color: var(--color-black);
+    }
+}
+.menuCardLinkArrow {
+    transition: all var(--transition-duration);
+    opacity: 0;
+
+    svg {
+        width: 25px;
+        height: 25px;
+        transform: rotate(-90deg);
+    }
+
+    @include lg {
+        opacity: 1;
+    }
+
+    @include touchDevice {
+        opacity: 1;
+    }
+}
+.menuCardLinkDescription {
+    font-family: var(--font-secondary);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 116%; /* 16.24px */
+    letter-spacing: -0.28px;
+    color: var(--color-grey-600);
+
+    &.addingSpace {
+        padding-left: 32px;
+    }
+}
+
+.menuCardMoreBtn {
+    border-top: 1px solid var(--color-border-general-on-white);
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        width: 100%;
+        padding: 16px;
+        font-size: 16px;
+    }
+
+    svg {
+        width: 25px;
+        height: 24px;
+        transform: rotate(-90deg);
+    }
+
+    @include lg {
+        border-bottom: 1px solid var(--color-grey-900);
+    }
+}

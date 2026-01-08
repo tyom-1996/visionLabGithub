@@ -1,0 +1,67 @@
+@use '@/styles/mixins.scss' as *;
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: var(--color-white);
+
+    @include lg {
+        padding-top: 24px;
+    }
+
+    @include sm {
+        gap: 16px;
+        padding: 0;
+    }
+}
+
+.prevSwiperBtn,
+.nextSwiperBtn {
+    cursor: pointer;
+}
+
+.swiperTitleContainer {
+    padding: 55px 0 16px 0;
+
+    @include lg {
+        padding: var(--section-padding);
+    }
+
+    @include sm {
+        padding: 0 var(--section-padding-size);
+    }
+}
+
+.allStoriesBtnWrapper {
+    border-top: 1px solid var(--color-border-general);
+
+    @include sm {
+        padding: 0 var(--section-padding-size, 16px);
+    }
+
+    .allStoriesBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        margin-left: calc(33.33% + 1px);
+        width: calc(33.33% - 2px);
+
+        svg {
+            width: 25px;
+            height: 24px;
+        }
+
+        @include lg {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 360px;
+        }
+
+        @include sm {
+            padding: 26px;
+            max-width: none;
+        }
+    }
+}

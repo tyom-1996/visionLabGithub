@@ -1,0 +1,81 @@
+@use '@/styles/mixins.scss' as *;
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.titleWithLogo {
+    display: flex;
+
+    @include lg {
+        gap: 24px;
+    }
+}
+
+.logoWrapper {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+
+    @include lg {
+        width: fit-content;
+    }
+}
+
+.titleLabelWrapper {
+    display: flex;
+    width: 33.33%;
+    align-items: flex-start;
+}
+
+.label {
+    display: flex;
+    width: 33.33%;
+    font-family: var(--font-secondary);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 124%;
+    letter-spacing: -0.32px;
+    color: var(--color-text-secondary);
+    padding-left: 24px;
+
+    @include lg {
+        padding-left: 0;
+        width: 100%;
+    }
+}
+
+.titleWrapper {
+    width: 66.66%;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+
+    @include lg {
+        width: fit-content;
+        padding: 0;
+    }
+}
+
+.description {
+    margin-left: 33.33%;
+    padding: 0 24px;
+    font-family: var(--font-secondary);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 126%; /* 27.72px */
+    letter-spacing: -0.66px;
+
+    @include lg {
+        margin-left: 0;
+        padding: 0;
+    }
+
+    @include sm {
+        font-size: 18px;
+        line-height: 124%; /* 22.32px */
+        letter-spacing: -0.36px;
+    }
+}

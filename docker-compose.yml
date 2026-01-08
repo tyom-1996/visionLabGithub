@@ -1,0 +1,17 @@
+services:
+  nextjs:
+    container_name: "${COMPOSE_PROJECT_NAME}_frontend"
+    restart: unless-stopped
+    ports:
+      - "${DOCKER_PORT:-80}:3000"
+    build:
+      context: ./
+      dockerfile: ./dockerfiles/production.Dockerfile
+    env_file:
+      - ./.env
+    networks:
+      - default
+
+networks:
+  default:
+    driver: bridge
