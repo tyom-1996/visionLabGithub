@@ -2,7 +2,6 @@
 
 import { useEffect, useState, useCallback, useRef } from 'react';
 import styles from './styles.module.scss';
-import { Button } from '@/components/shared/Button';
 import InfoIcon from './InfoIcon';
 import classNames from 'classnames';
 
@@ -58,7 +57,6 @@ export const CookieConsent = () => {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [isOpen]);
 
-
   useEffect(() => {
     if (!isOpen || !dialogRef.current) return;
 
@@ -92,7 +90,6 @@ export const CookieConsent = () => {
     return () => window.removeEventListener('keydown', handleTrapFocus);
   }, [isOpen]);
 
-
   if (!isOpen) return null;
 
   return (
@@ -106,7 +103,7 @@ export const CookieConsent = () => {
         aria-describedby="cookie-desc"
       >
         <div className={styles.infoIcon}>
-            <InfoIcon  />
+          <InfoIcon />
         </div>
 
         <h2 id="cookie-title" className={styles.title}>
@@ -118,24 +115,24 @@ export const CookieConsent = () => {
         </p>
 
         <div className={styles.buttons}>
-            <button
-                onClick={() => saveChoice('all')}
-                className={classNames(styles.consentBtn, styles.accept)}
-            >
-                Принять все
-            </button>
-            <button
-                onClick={() => saveChoice('decline')}
-                className={classNames(styles.consentBtn, styles.decline)}
-            >
-                Отказаться
-            </button>
-            <button
-                onClick={() => saveChoice('essential')}
-                className={classNames(styles.consentBtn, styles.essential)}
-            >
-                Только обязательные
-            </button>
+          <button
+            onClick={() => saveChoice('all')}
+            className={classNames(styles.consentBtn, styles.accept)}
+          >
+            Принять все
+          </button>
+          <button
+            onClick={() => saveChoice('decline')}
+            className={classNames(styles.consentBtn, styles.decline)}
+          >
+            Отказаться
+          </button>
+          <button
+            onClick={() => saveChoice('essential')}
+            className={classNames(styles.consentBtn, styles.essential)}
+          >
+            Только обязательные
+          </button>
         </div>
       </div>
     </div>
