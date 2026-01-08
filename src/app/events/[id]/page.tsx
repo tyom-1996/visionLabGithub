@@ -5,7 +5,6 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { allEvents } from '../data';
 import { getQuestionsData } from '@/api/questions';
-import { Button } from '@/components/shared/Button';
 import RegisterIcon from '../../../../public/content/icons/registerIcon';
 import SpeakersSlider from '@/components/sections/SpeakersSlider';
 import WebinarProgram from '@/components/sections/WebinarProgram';
@@ -13,7 +12,6 @@ import RightArrowIcon from '../../../../public/content/icons/rightArrow';
 import type { CSSProperties } from 'react';
 import OtherEvents from '@/components/sections/OtherEvents';
 import ScrollToAnchorButton from './ScrollToAnchorButton';
-import HeaderElements from '@/components/shared/HeaderElements';
 
 type Params = {
   params: Promise<{
@@ -42,36 +40,36 @@ const EventDetailsPage = async ({ params }: Params) => {
       name: 'КИРИЛЛОВ Иван Дамидович',
       role: 'CEO «РусГидро»',
       company: '',
-      image: '/content/images/speaker_img1.png',
+      image: '/content/images/speaker_img1.png'
     },
     {
       id: 2,
       name: 'МИХАЙЛОВ Александр Гиднев',
       role: 'Менеджер по продажам ООО «Стальные линии»',
       company: '',
-      image: '/content/images/speaker_img2.png',
+      image: '/content/images/speaker_img2.png'
     },
     {
       id: 3,
       name: 'КИРИЛЛОВ Иван Дамидович',
       role: 'CEO «РусГидро»',
       company: '',
-      image: '/content/images/speaker_img1.png',
+      image: '/content/images/speaker_img1.png'
     },
     {
       id: 4,
       name: 'МИХАЙЛОВ Александр Гиднев',
       role: 'Менеджер по продажам ООО «Стальные линии»',
       company: '',
-      image: '/content/images/speaker_img2.png',
-    },
+      image: '/content/images/speaker_img2.png'
+    }
   ];
   const speakers = [
     ...baseSpeakers,
     ...baseSpeakers.map((speaker, idx) => ({
       ...speaker,
-      id: `dup-${idx}`,
-    })),
+      id: `dup-${idx}`
+    }))
   ];
 
   const program = [
@@ -82,8 +80,8 @@ const EventDetailsPage = async ({ params }: Params) => {
       title: 'Знакомство',
       items: [
         'Приветствие участников',
-        'Краткий обзор тем встречи',
-      ],
+        'Краткий обзор тем встречи'
+      ]
     },
     {
       id: 2,
@@ -96,8 +94,8 @@ const EventDetailsPage = async ({ params }: Params) => {
         'Практические примеры и кейсы',
         'Ответы на вопросы и обсуждение',
         'Итоги и ключевые выводы',
-        'Рекомендации и дальнейшие шаги для участников',
-      ],
+        'Рекомендации и дальнейшие шаги для участников'
+      ]
     },
     {
       id: 3,
@@ -106,8 +104,8 @@ const EventDetailsPage = async ({ params }: Params) => {
       title: 'Ритейл',
       items: [
         'Сценарии внедрения ИИ в офлайн и онлайн-магазинах',
-        'Антифрод и персонализация на витрине',
-      ],
+        'Антифрод и персонализация на витрине'
+      ]
     },
     {
       id: 4,
@@ -116,8 +114,8 @@ const EventDetailsPage = async ({ params }: Params) => {
       title: 'Новинки 2025',
       items: [
         'Ключевые тренды по компьютерному зрению',
-        'Что меняется в требованиях к ML-моделям',
-      ],
+        'Что меняется в требованиях к ML-моделям'
+      ]
     },
     {
       id: 5,
@@ -126,39 +124,39 @@ const EventDetailsPage = async ({ params }: Params) => {
       title: 'Завершение',
       items: [
         'Резюме и выводы',
-        'Ответы на вопросы участников',
-      ],
-    },
+        'Ответы на вопросы участников'
+      ]
+    }
   ];
 
   const audience = [
     {
       id: 1,
       title: 'Руководителям и владельцам бизнеса',
-      description: 'Узнайте как повысить рентабельность уже купленных GPU',
+      description: 'Узнайте как повысить рентабельность уже купленных GPU'
     },
     {
       id: 2,
       title: 'ИТ-руководителям и менеджерам',
-      description: 'Узнайте как точнее планировать SLA и сроки выполнения задач',
+      description: 'Узнайте как точнее планировать SLA и сроки выполнения задач'
     },
     {
       id: 3,
       title: 'Руководителям и владельцам бизнеса',
-      description: 'Узнайте как повысить рентабельность уже купленных GPU',
+      description: 'Узнайте как повысить рентабельность уже купленных GPU'
     },
     {
       id: 4,
       title: 'ИТ-руководителям и менеджерам',
-      description: 'Узнайте как точнее планировать SLA и сроки выполнения задач',
-    },
+      description: 'Узнайте как точнее планировать SLA и сроки выполнения задач'
+    }
   ];
 
   // Duplicate events to ensure the slider has plenty of slides to loop through
   const otherEventsImages = [
     '/content/images/other_events_img1.png',
     '/content/images/other_events_img2.png',
-    '/content/images/other_events_img3.png',
+    '/content/images/other_events_img3.png'
   ];
 
   // Ensure priority ordering in "Другие события":
@@ -197,7 +195,7 @@ const EventDetailsPage = async ({ params }: Params) => {
       return {
         ...base,
         id: base.id * 1000 + idx, // keep ids unique for React keys
-        img: otherEventsImages[idx % otherEventsImages.length],
+        img: otherEventsImages[idx % otherEventsImages.length]
       };
     }
   );
@@ -206,7 +204,7 @@ const EventDetailsPage = async ({ params }: Params) => {
     // Ensure no inherited gap is applied to Questions block on this page
     '--gap-size': '0px',
     marginTop: 0,
-    paddingTop: 0,
+    paddingTop: 0
   };
 
   // const headerImageData = {
@@ -298,7 +296,6 @@ const EventDetailsPage = async ({ params }: Params) => {
               <p>
                 Технологии для бизнеса 2025–2030
               </p>
-              
             </div>
           </div>
         </div>
@@ -324,7 +321,7 @@ const EventDetailsPage = async ({ params }: Params) => {
           itemHeader: styles.programItemHeader,
           title: styles.programTitle,
           toggle: styles.programToggle,
-          bullets: styles.programBullets,
+          bullets: styles.programBullets
         }}
       />
 
@@ -393,4 +390,3 @@ const EventDetailsPage = async ({ params }: Params) => {
 };
 
 export default EventDetailsPage;
-
