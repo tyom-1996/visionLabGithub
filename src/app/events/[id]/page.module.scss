@@ -893,10 +893,6 @@
   font-size: 18px;
   font-weight: 400;
   padding: 37px 44px;
-  cursor: pointer;
-  outline: none;
-  border: none;
-
   @include sm {
     padding: 20px;
   }
@@ -904,6 +900,9 @@
   @include breakpoint(500px) {
     padding: 18px;
   }
+  cursor: pointer;
+  outline: none;
+  border: none;
 }
 
 .videoArrow {
@@ -1046,5 +1045,5 @@
 @media (min-width: 1024px) {
   .bannerSection {
     width: calc(100% - 2px);
-  }
+}
 }

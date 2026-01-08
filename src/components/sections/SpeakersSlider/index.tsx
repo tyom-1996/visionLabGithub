@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import SwiperBlock from '@/components/layout/Swiper';
 import { Button } from '@/components/shared/Button';
+import Sprite from '@/components/shared/Sprite';
 import classNames from 'classnames';
 import styles from './styles.module.scss';
 import LeftArrowIcon from '@/../public/content/icons/leftArrow';
@@ -50,6 +51,7 @@ const SpeakersSlider = ({ speakers }: { speakers: Speaker[] }) => (
         }}
         loop
         swiperSpaceBetween={0}
+       
         breakpoints={{
           0: { slidesPerView: 1 },
           735: { slidesPerView: 2 },
@@ -72,3 +74,4 @@ const SpeakersSlider = ({ speakers }: { speakers: Speaker[] }) => (
 );
 
 export default SpeakersSlider;
+

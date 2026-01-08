@@ -35,13 +35,14 @@ const OtherEventCard = ({ card }: { card: EventItem }) => (
 const OtherEvents = ({ events }: Props) => (
   <section className={styles.otherEventsSection}>
     <div className={styles.otherEventsHeader}>
-      <h2 className={styles.otherEventsTitle}>Другие события</h2>
+        <h2 className={styles.otherEventsTitle}>Другие события</h2>
     </div>
+   
     <SwiperBlock
       isHeadHide
       cardsList={events}
       CardComponent={OtherEventCard}
-      navButtonClasses={{
+        navButtonClasses={{
         prevButtonClass: styles.prevBtnEvents,
         nextButtonClass: styles.nextBtnEvents,
       }}
@@ -53,23 +54,25 @@ const OtherEvents = ({ events }: Props) => (
         850: { slidesPerView: 3 },
       }}
       classNameCardsSliderWrapper={styles.otherEventsSlider}
-      AdditionalElement={
-        <div className={styles.navBtnsEvents}>
-          <Button variant="transparent-black" className={classNames(styles.navBtnEvents, styles.prevBtnEvents)}>
-            <LeftArrowIcon />
-          </Button>
-          <Button variant="transparent-black" className={classNames(styles.navBtnEvents, styles.nextBtnEvents)}>
-            <RightArrowIcon />
-          </Button>
-        </div>
-      }
+        AdditionalElement={
+            <div className={styles.navBtnsEvents}>
+            <Button variant="transparent-black" className={classNames(styles.navBtnEvents, styles.prevBtnEvents)}>
+                <LeftArrowIcon />
+            </Button>
+            <Button variant="transparent-black" className={classNames(styles.navBtnEvents, styles.nextBtnEvents)}>
+                <RightArrowIcon />
+            </Button>
+            </div>
+        }
       isBottomButtonsHide
     />
     <a href={RoutePath.EVENTS} className={styles.allWebinarsLink}>
-      Все вебинары
-      <AllVebinarsIcon />
-    </a>
+       Все вебинары
+       <AllVebinarsIcon />
+    </a> 
   </section>
 );
 
 export default OtherEvents;
+
+

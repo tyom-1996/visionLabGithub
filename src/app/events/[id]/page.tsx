@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { allEvents } from '../data';
 import { getQuestionsData } from '@/api/questions';
+import { Button } from '@/components/shared/Button';
 import RegisterIcon from '../../../../public/content/icons/registerIcon';
 import SpeakersSlider from '@/components/sections/SpeakersSlider';
 import WebinarProgram from '@/components/sections/WebinarProgram';
@@ -12,6 +13,7 @@ import RightArrowIcon from '../../../../public/content/icons/rightArrow';
 import type { CSSProperties } from 'react';
 import OtherEvents from '@/components/sections/OtherEvents';
 import ScrollToAnchorButton from './ScrollToAnchorButton';
+import HeaderElements from '@/components/shared/HeaderElements';
 
 type Params = {
   params: Promise<{
@@ -62,14 +64,14 @@ const EventDetailsPage = async ({ params }: Params) => {
       role: 'Менеджер по продажам ООО «Стальные линии»',
       company: '',
       image: '/content/images/speaker_img2.png',
-    }
+    },
   ];
   const speakers = [
     ...baseSpeakers,
     ...baseSpeakers.map((speaker, idx) => ({
       ...speaker,
       id: `dup-${idx}`,
-    }))
+    })),
   ];
 
   const program = [
@@ -80,7 +82,7 @@ const EventDetailsPage = async ({ params }: Params) => {
       title: 'Знакомство',
       items: [
         'Приветствие участников',
-        'Краткий обзор тем встречи'
+        'Краткий обзор тем встречи',
       ],
     },
     {
@@ -94,7 +96,7 @@ const EventDetailsPage = async ({ params }: Params) => {
         'Практические примеры и кейсы',
         'Ответы на вопросы и обсуждение',
         'Итоги и ключевые выводы',
-        'Рекомендации и дальнейшие шаги для участников'
+        'Рекомендации и дальнейшие шаги для участников',
       ],
     },
     {
@@ -104,7 +106,7 @@ const EventDetailsPage = async ({ params }: Params) => {
       title: 'Ритейл',
       items: [
         'Сценарии внедрения ИИ в офлайн и онлайн-магазинах',
-        'Антифрод и персонализация на витрине'
+        'Антифрод и персонализация на витрине',
       ],
     },
     {
@@ -114,7 +116,7 @@ const EventDetailsPage = async ({ params }: Params) => {
       title: 'Новинки 2025',
       items: [
         'Ключевые тренды по компьютерному зрению',
-        'Что меняется в требованиях к ML-моделям'
+        'Что меняется в требованиях к ML-моделям',
       ],
     },
     {
@@ -124,9 +126,9 @@ const EventDetailsPage = async ({ params }: Params) => {
       title: 'Завершение',
       items: [
         'Резюме и выводы',
-        'Ответы на вопросы участников'
+        'Ответы на вопросы участников',
       ],
-    }
+    },
   ];
 
   const audience = [
@@ -149,14 +151,14 @@ const EventDetailsPage = async ({ params }: Params) => {
       id: 4,
       title: 'ИТ-руководителям и менеджерам',
       description: 'Узнайте как точнее планировать SLA и сроки выполнения задач',
-    }
+    },
   ];
 
   // Duplicate events to ensure the slider has plenty of slides to loop through
   const otherEventsImages = [
     '/content/images/other_events_img1.png',
     '/content/images/other_events_img2.png',
-    '/content/images/other_events_img3.png'
+    '/content/images/other_events_img3.png',
   ];
 
   // Ensure priority ordering in "Другие события":
@@ -296,6 +298,7 @@ const EventDetailsPage = async ({ params }: Params) => {
               <p>
                 Технологии для бизнеса 2025–2030
               </p>
+              
             </div>
           </div>
         </div>
@@ -390,3 +393,4 @@ const EventDetailsPage = async ({ params }: Params) => {
 };
 
 export default EventDetailsPage;
+

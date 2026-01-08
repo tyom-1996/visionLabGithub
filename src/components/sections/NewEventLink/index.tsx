@@ -14,26 +14,27 @@ type Event = {
 };
 
 type Props = UseMockImage & {
-  title: string;
-  titleLabel: string | number;
-  newEvents: Event[];
-};
+  title: string,
+  titleLabel: string | number,
+  newEvents: Event[],
+}
 
 const NewEventLink = (props: Props) => {
   const {
+    title,
     titleLabel,
-    newEvents,
+    newEvents
   } = props;
 
   const [active, setActive] = useState(0);
-  const activeEvent = newEvents[active];
+  const activeEvent = props.newEvents[active]
 
   return (
     <section className={styles.wrapper}>
       <div className={styles.selector}>
         <div className={styles.buttons}>
-          <button onClick={() => setActive(0)} className={active === 0 ? styles.btnActive : styles.btnNotActive}>Вебинары</button>
-          <button onClick={() => setActive(1)} className={active === 1 ? styles.btnActive : styles.btnNotActive}>Конференции</button>
+          <button onClick={() => setActive(0)} className={active == 0 ? styles.btnActive : styles.btnNotActive}>Вебинары</button>
+          <button onClick={() => setActive(1)} className={active == 1 ? styles.btnActive : styles.btnNotActive}>Конференции</button>
         </div>
       </div>
       <div className={styles.activeContent}>

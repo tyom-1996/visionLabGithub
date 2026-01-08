@@ -1,9 +1,10 @@
 'use client';
 
+import Image from 'next/image';
 import withErrorBoundary from '@/hocs/withErrorBoundary';
 import { UseMockImage } from '@/types/components';
 import styles from './styles.module.scss';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { Button } from '@/components/shared/Button';
 import EventLink from './EventLink';
 
@@ -44,7 +45,7 @@ const NewEventLink = (props: Props) => {
               <EventLink event={item} />
             </div>
           ))}
-          {showList.length < list.length && (
+          {showList.length < list.length && 
             <div className={styles.moreBtnWrapper}>
               <Button
                 className={styles.moreBtn}
@@ -55,8 +56,7 @@ const NewEventLink = (props: Props) => {
               >
                 Загрузить еще
               </Button>
-            </div>
-          )}
+            </div>}
         </div>
       </div>
     </section>

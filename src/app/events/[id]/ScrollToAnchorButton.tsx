@@ -47,3 +47,4 @@ const ScrollToAnchorButton = ({ targetId, className, children }: Props) => {
 };
 
 export default ScrollToAnchorButton;
+

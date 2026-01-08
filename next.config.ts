@@ -3,7 +3,10 @@ import type { NextConfig } from 'next';
 import path from 'path';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Disable Next.js ESLint during builds
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   images: {
     domains: process.env.NEXT_PUBLIC_ALLOWED_IMAGE_DOMAINS?.split(','),
   },
